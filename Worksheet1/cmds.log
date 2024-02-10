@@ -1,0 +1,500 @@
+   62  npm run dev
+   63  npm run dev
+   64  git status
+   65  git add app/(home)/profile/page.tsx
+   66  git add "app/(home)/profile/page.tsx"
+   67  git add "app/components/AddAddressModal.tsx"
+   68  git add "app/components/UpdateEmail.tsx"
+   69  git add "app/components/UpdatePassword.tsx"
+   70  git status
+   71  git commit -m "Updated Profile page modals styling"
+   72  git push
+   73  git pull
+   74  npx drizzle-kit studio
+   75  npm ru nbuild
+   76  npm run build
+   77  npm run dev
+   78  git pull
+   79  npm run dev
+   80  npm run dev
+   81  npm run dev
+   82  npm run dev
+   83  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+   84  docker compose up
+   85  npm run dev
+   86  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+   87  docker compose up
+   88  git status
+   89  git add "app/lib/utils.ts"
+   90  git add "app/components/DeliveryAddressComponent.tsx"
+   91  git status
+   92  git commit -m "Added suggested address if address validation fails"
+   93  git status
+   94  git add app/components/DeliveryAddressComponent.tsx
+   95  git add app/lib/utils.ts
+   96  git status
+   97  git commit -m "Working on address validation bugs"
+   98  git push
+   99  npm run dev
+  100  ghc --version
+  101  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+  102  config.log
+  103  vim config.log
+  104  clear
+  105  ghci
+  106  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+  107  cd .ghcup/logs
+  108  pwd
+  109  cd ../..
+  110  pwd
+  111  cd ..
+  112  cd .ghcup/logs
+  113  ls -a
+  114  ghc hello.hs
+  115  ./hello
+  116  ghc --version
+  117  clear
+  118  [ Error ] [GHCup-00841] Process "sh" with arguments ["./configure",
+  119  clear
+  120  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+  121  cd .ghcup/logs
+  122  ls -a
+  123  cat ghc-configure.log
+  124  clear
+  125  curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+  126  ghc --version
+  127  cd Downloads/Cs
+  128  pwd
+  129  ls
+  130  clear
+  131  cd
+  132  cd Downloads/CS
+  133  ls
+  134  git clone https://github.com/townsag/cs160_team3.git
+  135  cd cs160_team3
+  136  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+  137  docker build . -t ogo
+  138  docker build . -t ogo
+  139  docker run -p 3000:3000 ogo
+  140  npm run dev
+  141  npm run dev
+  142  git pull
+  143  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+  144  docker compose up
+  145  npx drizzle-kit studio
+  146  git pull
+  147  git pull
+  148  npm run dev
+  149  git pull
+  150  git status
+  151  git restore  app/components/CheckoutButton.tsx
+  152  git status
+  153  git pull
+  154  npx drizzle-kit studio
+  155  npm install @esbuild/darwin-x64
+  156  npx drizzle-kit studio
+  157  npm i drizzle-kit@latest -D
+  158  npx drizzle-kit studio
+  159  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+  160  docker compose up
+  161  git pull
+  162  git pull
+  163  git status
+  164  git pull
+  165  git status
+  166  git restore app/ui/products/AddToCartForm.tsx
+  167  git restore docker-compose.yml
+  168  git restore app/actions/cart.ts
+  169  git status
+  170  git restore app/components/AddAddressModal.tsx
+  171  git restore app/components/DeliveryAddressComponent.tsx
+  172  git status
+  173  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+  174  docker compose up
+  175  npx drizzle-kit studio
+  176  npm run dev
+  177  git status
+  178  git add app/components/CheckoutButton.tsx
+  179  git commit -m "Fixed bug to check  if items are stocked before ordering"
+  180  npx drizzle-kit studio
+  181  npm run dev
+  182  npx drizzle-kit studio
+  183  npm run dev
+  184  npm run dev
+  185  npm run dev
+  186  npx drizzle-kit
+  187  npx drizzle-kit studio
+  188  n dev
+  189  npm run dev
+  190  npm run dev
+  191  trace route
+  192  trace route 8.8.8.8
+  193  traceroute 8.8.8.8
+  194  ifconfig
+  195  jupyter notebook
+  196  dig https://www.smtown.com/
+  197  dig www.smtown.com
+  198  dig www.magicbricks.com
+  199  traceroute 18.182.240.12
+  200  traceroute 184.28.190.59
+  201  cd Downloads/CS
+  202  ls
+  203  mkdir 161
+  204  ls
+  205  cd 161
+  206  ls
+  207  git clone https://github.com/fahmed0710/161-Individual-Project.git
+  208  ls
+  209  cd 161-Individual-Project
+  210  ls
+  211  mkdir presentation_slides
+  212  ls
+  213  mkdir weekly_report
+  214  mkdir dev
+  215  mkdir docs
+  216  cd docs
+  217  mkdir expert_users
+  218  mkdir app_users
+  219  mkdir developers
+  220  ls
+  221  cd ..
+  222  ls
+  223  mkdir pub
+  224  ls
+  225  git status
+  226  git push
+  227  git add --all
+  228  git commit
+  229  git push
+  230  clear
+  231  ssh farihasp24@172.20.25.9
+  232  ssh farihasp24@172.20.25.9
+  233  pwd
+  234  ssh farihasp24@172.20.25.9
+  235  echo $SHELL
+  236  cd Downloads
+  237  cd CS
+  238  cd 161
+  239  ls
+  240  ls
+  241  cd ..
+  242  ls
+  243  cd 161
+  244  git clone https://github.com/fahmed0710/161-Individual-Project.git
+  245  ls
+  246  cd 161-Individual-Project
+  247  ls
+  248  vim README.md
+  249  mkdir presentation_slides
+  250  mkdir weekly_report
+  251  mkdir dev
+  252  mkdir docs
+  253  cd docs
+  254  mkdir expert_users
+  255  mkdir app_users
+  256  mkdir developers
+  257  cd ..
+  258  ls
+  259  mkdir pub
+  260  ls
+  261  git status
+  262  git add README.md
+  263  git status
+  264  git commit -m "Week 2 Report"
+  265  git push
+  266  git add weekly_report
+  267  git add presentation_slides
+  268  git add dev
+  269  git status
+  270  git add docs
+  271  git add pub
+  272  git commit -m "Created folders"
+  273  git push
+  274  cd dev
+  275  vim dev.md
+  276  cd ..
+  277  git add dev
+  278  git status
+  279  cd presentation_slides
+  280  vim presentation_slides.md
+  281  cd ..
+  282  git add presentation_slides
+  283  cd weekly_report
+  284  vim weekly_report.md
+  285  cd ..
+  286  git add weekly_report
+  287  git status
+  288  cd docs
+  289  cd expert_users
+  290  vim expert_users.md
+  291  cd ..
+  292  cd app_users
+  293  vim app_users.md
+  294  cd ..
+  295  cd developers
+  296  vim developers.md
+  297  cd ..
+  298  git add docs
+  299  git add docs/expert_users
+  300  ls
+  301  cd ..
+  302  git add docs
+  303  cd pub
+  304  vim pub.md
+  305  cd ..
+  306  git add pub
+  307  git status
+  308  cd pub
+  309  ls
+  310  vim pub.md
+  311  cd ..
+  312  git add pub
+  313  cd docs
+  314  cd expert_users
+  315  vim expert_users.md
+  316  cd ..
+  317  cd app_users
+  318  vim app_users.md
+  319  ls
+  320  cd ..
+  321  cd developers
+  322  vim developers.md
+  323  ls
+  324  cd ..
+  325  cd expert_users
+  326  ls
+  327  cd ../..
+  328  git add docs
+  329  git status
+  330  git commit -m "Created subdirectories"
+  331  git push
+  332  cd Downloads/CS
+  333  ls
+  334  mkdir 158
+  335  vim hello.txt
+  336  cd Downlaods/CS
+  337  cd Downloads/CS
+  338  mkdir 131
+  339  cd 131
+  340  ls
+  341  vi a.txt
+  342  vim b.txt
+  343  vim c.csb
+  344  ls
+  345  ls
+  346  ls -ltr
+  347  vim a.txt
+  348  ls
+  349  cat nefilewithvi.txt
+  350  vi newfilewithvi.txt
+  351  cat newfilewithvi.txt
+  352  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  353  sudo apt-get install wget
+  354  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+  355  apt install wget
+  356  apt-get install wget
+  357  brew install wget
+  358  wget
+  359  cd Downloads/CS/131
+  360  tail -5 spotify.csv
+  361  ls
+  362  tail -5 spotify-2023.csv
+  363  man tail
+  364  nano spotify-2023.csv
+  365  nano spotify-2023.csv
+  366  vi spotify-2023.csv
+  367  vi spotify-2023.csv
+  368  vi spotify-2023.csv
+  369  vi spotify-2023.csv
+  370  cd Downloads/CS
+  371  cd
+  372  cd Downloads/CS
+  373  ls
+  374  cd 158
+  375  ls
+  376  curl -v http://www.google.com
+  377  cd Downloads/CS/131
+  378  pwd
+  379  vi unsorted.txt
+  380  ls
+  381  cat unsorted.txt
+  382  sort unsorted.txt
+  383  cat unsorted.txt
+  384  sort unsorted.txt > sorted.txt
+  385  cat sorted.txt
+  386  echo "Hello"
+  387  echo "Hello" > echofile.txt
+  388  ls
+  389  cat echofile.txt
+  390  echo "Sup" > echofile.txt
+  391  cat echofile.txt
+  392  cd Downloads/CS/131
+  393  man wc
+  394  wc sorted.txt
+  395  vim sorted.txt
+  396  wc sorted.txt
+  397  ls
+  398  grep 'Drake' spotify-2023.csv
+  399  grep "Taylor Swift" spotify-2023.csv > wc -l
+  400  grep "Taylor Swift" spotify-2023.csv> linesWithTaylor.txt
+  401  ls
+  402  wc -l linesWithTaylor.txt
+  403  grep -i Taylor spotify-2023.csv
+  404  grep -i Twice spotify-2023.csv
+  405  grep -i Blackpink spotify-2023.csv
+  406  grep -i Jennie spotify-2023.csv
+  407  grep -i Jin spotify-2023.csv
+  408  grep -i Jimin spotify-2023.csv
+  409  clear
+  410  ls
+  411  cat wc
+  412  clear
+  413  echo `pwd`
+  414  echo "pwd"
+  415  a = 123
+  416  a=123
+  417  echo a
+  418  echo $a
+  419  echo {a}
+  420  b={a}456
+  421  echo $b
+  422  b=$a456
+  423  echo $b
+  424  b=${a}456
+  425  echo $b
+  426  ls
+  427  rm linesWithTaylor.txt
+  428  grep "Drake" spotify-2023.csv >> feb8ex.txt
+  429  cat feb8ex.txt
+  430  grep "Taylor Swift" spotify-2023.csv >> feb8ex.txt
+  431  cat feb8ex.txt
+  432  wc -l feb8ex.txt
+  433  exit
+  434  telnet gaia.cs.umass.edu 80
+  435  cd Downloads/CS/131
+  436  ls
+  437  rmdir wc
+  438  rm wc
+  439  rm unsorted.txt
+  440  rm echofile.txt
+  441  rm a.txt
+  442  rm newfilewithvi.txt
+  443  ls
+  444  rm sorted.txt
+  445  wget www.github.com
+  446  ls
+  447  rm index.html
+  448  cd ..
+  449  ls
+  450  rmdir 131
+  451  rmdir -f 131
+  452  rm 131
+  453  rmdir -r 131
+  454  rm -3 131
+  455  ls
+  456  cd
+  457  cd 131
+  458  ls
+  459  cd Downloads/CS
+  460  ls
+  461  cd 131
+  462  ls
+  463  rm febex.txt
+  464  feb8ex.txt
+  465  rm feb8ex.txt
+  466  rm spotify-2023.csv
+  467  ls
+  468  cd ..
+  469  rmdir 131
+  470  rm -r 131
+  471  ls
+  472  mkdir CS-131
+  473  cd CS-131
+  474  ls
+  475  git init
+  476  vim demo.txt
+  477  git status
+  478  git status
+  479  git add demo.txt
+  480  git status
+  481  git commit -m "Test push"
+  482  git checkout -b demo
+  483  git branch
+  484  git push origin demo
+  485  ls
+  486  git push 
+  487  git push demo
+  488  git push origin
+  489  cd ..
+  490  ls
+  491  rmdir CS-131
+  492  rm -r dir CS-131
+  493  ls
+  494  rm -r CS-131
+  495  cd Downloads/CS
+  496  ls
+  497  rm CS-131
+  498  rmdir CS-131
+  499  rm -rf CS-131
+  500  ls
+  501  cd Downloads/CS
+  502  ls
+  503  history
+  504  wget www.github.com
+  505  mkdir cs131
+  506  cd cs131
+  507  pwd
+  508  git init
+  509  vim newfile.txt
+  510  ls
+  511  git status
+  512  git add newfile.txt
+  513  git status
+  514  git commit -m "Demo commit"
+  515  git checkout -b test
+  516  git branch
+  517  git remote add origin https://github.com/fahmed0710/cs131.git
+  518  git branch -M main
+  519  git push -u origin main
+  520  git remote add origin https://github.com/fahmed0710/cs131.git
+  521  git remote add origin https://github.com/fahmed0710/cs131.git
+  522  git branch -M main
+  523  git push -u origin main
+  524  cd ..
+  525  mv cs131 131
+  526  ls
+  527  cd 131
+  528  ls
+  529  git branch
+  530  git remote add origin https://github.com/fahmed0710/cs131.git
+  531  git branch -M main
+  532  git push -u origin main
+  533  git push -u origin main
+  534  git push -u origin main
+  535  git push origin demo
+  536  git branch
+  537  git checkout -b test
+  538  git checkout main
+  539  git push origin test
+  540  git pull origin master
+  541  git branch
+  542  git checkout master
+  543  git pull origin master
+  544  git checkout test
+  545  vim test.txt
+  546  git add test.txt
+  547  git status
+  548  git commit -m "Testing"
+  549  git push
+  550  git push origin test
+  551  git checkout main
+  552  git pull origin master
+  553  git checkout master
+  554  git pull origin
+  555  git pull origin master
+  556  git checkout main
+  557  git pull
+  558  ls
+  559  mkdir Worksheet1
+  560  cd Worksheet1
+  561  history > cmds.log
