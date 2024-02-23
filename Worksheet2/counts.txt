@@ -1,0 +1,2 @@
+line count: 238 music.txt
+word count: 830 music.txt
