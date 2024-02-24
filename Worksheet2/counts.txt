@@ -1,2 +1,2 @@
-line count: 238 music.txt
-word count: 830 music.txt
+(line count for records in "Music" category): 236
+(word count for records in "Music" category): 821

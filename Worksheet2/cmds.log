@@ -8,12 +8,12 @@
     8  ls
     9  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
    10  ls
-   11* grep -i "United States" 'Global YouTube Statistics.csv'> counts.txt
+   11  grep -i "United States" 'Global YouTube Statistics.csv'> counts.txt
    12  grep -i "Music" 'Global YouTube Statistics.csv'
    13  grep -i "Music" 'Global YouTube Statistics.csv' > music.txt
    14  ls
    15  wc -l music.txt
-   16* wc music.txt > counts.txt
+   16  wc music.txt > counts.txt
    17  wc -w music .txt
    18  wc -w music.txt
    19  wc music.txt > counts.txt
@@ -29,3 +29,77 @@
    29  vim counts.txt
    30  ls
    31  history > cmds.log
+   32  mkdir Worksheet2
+   33  ls
+   34  mv cmds.log Worksheet2
+   35  mv counts.txt Worksheet2
+   36  ls
+   37  cd Worksheet2
+   38  ls
+   39  git status
+   40  git add Worksheet2
+   41  cd ..
+   42  git status
+   43  git add Worksheet2/
+   44  git commit -m "Worksheet2 submission"
+   45  git status
+   46  git config --global user.email "fahmed0710@gmail.com"
+   47  git commit -m "Worksheet2 submission"
+   48  git config --global user.name "Your Name"
+   49  git config --global user.name "fahmed0710"
+   50  git commit -m "Worksheet2 submission"
+   51  git push
+   52  git push origin
+   53  git push -u origin
+   54  git status
+   55  git push
+   56  exit
+   57  ls
+   58  cd cs131
+   59  ls
+   60  mv 'Global YouTube Statistics.csv' Worksheet2/
+   61  ls
+   62  cd Worksheet2
+   63  ls
+   64  rm cmds.log
+   65  rm counts.txt
+   66  man cut
+   67  cut -d',' -f1-8 'Global YouTube Statistics.csv'
+   68  man $
+   69  cut -d',' -f1-8 'Global YouTube Statistics.csv' | grep -i "^United States$"
+   70  cut -d',' -f1-8 'Global YouTube Statistics.csv' | grep -i "United States"
+   71  cut -d',' -f1-8 'Global YouTube Statistics.csv' | grep -i "United States$"
+   72  cut -d',' -f1-8,9- 'Global YouTube Statistics.csv' | grep -i "United States$"
+   73  cut -d',' -f1-8,9- 'Global YouTube Statistics.csv'
+   74  man grep
+   75  grep -E "^([^,]*,){7}[^,]*,.*United States" 'Global YouTube Statistics.csv'
+   76  clear
+   77  ls
+   78  grep -E "^([^,]*,){7}.*United States" 'Global YouTube Statistics.csv'
+   79  grep -E "^([^,]*,){7}.*United States" 'Global YouTube Statistics.csv' > linesWithUS.txt
+   80  vim linesWithUS.txt
+   81  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' 
+   82  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' | wc -l
+   83  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' | wc 
+   84  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' > music.txt
+   85  ls
+   86  wc -l music.txt
+   87  wx -w music.txt
+   88  wc -w music.txt
+   89  wc -l music.txt > counts.txt
+   90  wc -w music.txt > counts.txt
+   91  vi counts.txt
+   92  wc -l music.txt > counts.txt
+   93  wc -w music.txt >> counts.txt
+   94  ls
+   95  vim counts.txt
+   96  rm music.txt
+   97  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' | wc -l 
+   98  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' | wc -l > counts.txt
+   99  ls
+  100  vim counts.txt
+  101  grep -E "^([^,]*,){4}.*Music" 'Global YouTube Statistics.csv' | wc -w >> counts.txt
+  102  vim counts.txt
+  103  ls
+  104  head counts.txt
+  105  history > cmds.log
