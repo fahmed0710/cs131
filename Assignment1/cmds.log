@@ -1,0 +1,83 @@
+Assignment 1 cmds.log 
+
+1. Make a directory Assignment1 under the home directory and change to it. 
+  209  mkdir Assignment1
+  210  cd Assignment1
+  211  pwd > Assignment1.txt
+  212  ls
+  213  cat Assignment1.txt
+----------------------------------------------------------------------------
+2. Echo the current shell using the global variable. 
+  214  echo $SHELL
+  215  echo $SHELL > Assignment1.txt
+  216  cat Assignment1.txt
+----------------------------------------------------------------------------
+3. Echo the home directory path.  
+  217  echo $Home
+  218  echo $HOME
+  219  echo $HOME > Assignment1.txt
+  220  cat Assignment1.txt
+----------------------------------------------------------------------------
+4. Find your UID and to what groups you belong.  
+  221  cat /etc/passwd
+  222  cat /etc/passwd | grep 'farihasp24'
+  223  cat /etc/passwd | grep 'farihasp24'>> Assignment1.txt
+  224  vim Assingnment1.txt
+  225  vi Assignment1.txt
+  226  ls
+
+(I realized I hadn't been appending my previous answers so I corrected that)
+  227  echo $SHELL >> Assignment1.txt
+  228  echo $HOME >> Assignment1.txt
+  229  vim Assignment1.txt
+----------------------------------------------------------------------------
+5. Create a new directory "myDir" under Assignment1 and remove the write permission. See if you can cd into it, ls it, ls -l it, or create files in it.  
+  230  mkdir myDir
+  231  chmod u-w myDir
+  232  cd myDir
+  233  ls
+  234  ls -l
+  235  ls -l >> Assignment1.txt
+  236  ls -l >> ../Assignment1.txt
+  237  vi test.txt
+  238  vi test.txt >> ../Assignment1.txt
+----------------------------------------------------------------------------
+6. Create a new directory "myDir2" and "myDir3".
+  239  cd ..
+  240  mkdir myDir2
+  241  mkdir myDir3
+  242  ls >> Assignment1.txt
+  243  vi Assignment1.txt
+----------------------------------------------------------------------------
+7. Inside myDir2, create "myFile.txt" and then mv to myDir3
+  244  cd myDir2
+  245  vi myFile.txt
+  246  mv myFile.txt ../myDir3/ 
+  247  cd ../myDir3
+  248  ls >> Assignment1.txt
+  249  cd ..
+  250  vi Assignment1.txt
+----------------------------------------------------------------------------
+8. Find the total amount of RAM/Memory in the IBM VM using free and display it in mebibytes.
+  251  man free  
+  252  free -m
+  253  free -m >> Assignment1.txt
+  254  vi Assignment1.txt  
+----------------------------------------------------------------------------
+9. Identify the operating system version.
+  255  ls /etc/
+  256  ls /etc/ | grep -i "os"
+  257  ls /etc/ | grep -i "os" >> Assignment1.txt
+  258  vim Assignment1.txt
+  259  cat os-release
+  260  cat /etc/os-release
+  261  cat /etc/os-release >> Assignment1.txt
+  262  vi Assignment1.txt
+  263  cat /etc/os-release | grep -i "version"
+  264  vi Assignment1.txt
+----------------------------------------------------------------------------
+10. What is the permission given to all users for the file containing the OS version information?
+  265  ls -l /etc/os-release
+  266  ls -l /etc/os-release >> Assignment1.txt
+  267  vi Assignment1.txt
+  268  history > cmds.log
