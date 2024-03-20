@@ -1,0 +1,69 @@
+Assignment 2 cmds.log
+
+  313  ls
+  314  cd cs131
+  315  ls
+  316  mkdir Assignment2
+  317  cd Assignment2
+  318  echo "" > Assignment2.txt
+  319  ls
+  320  cat Assignment2.txt
+-------------------------------------------------------------------------------
+1. find /etc -type f > one.txt 2> two.txt
+  321  find /etc -type f > one.txt 2> two.txt
+  322  ls
+  323  vim Assignment2.txt
+  324  cat one.txt
+  325  cat one.txt >> Assignment1.txt
+  326  vim Assignment1.txt
+  327  ls
+  328  rm Assignment1.txt
+  329  cat one.txt >> Assignment2.txt
+  330  vim Assignment2.txt
+  331  clear
+  332  cat two.txt >> Assignment2.txt
+  333  vim Assignment2.txt 
+-------------------------------------------------------------------------------
+2. Which [Month, Year] has the most YouTube channels created?  
+  334  ls
+  335  Assignment2.txt
+  336  vim Assignment2.txt
+  337  head Assignment2.txt
+  338  vim Assignment2.txt
+  339  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  340  ls
+  341  mv 'Global YouTube Statistics.csv'
+  342  mv 'Global YouTube Statistics.csv' youtubeStats.csv
+  343  ls
+  344  head -1 youtubeStats.csv
+  345  head -1 youtubeStats.csv | grep 'created_year'
+  346  head -1 youtubeStats.csv | grep 'created_month'
+  347  cut -d',' -f21,22 youtubeStats.csv
+  348  cut -d',' -f20,21 youtubeStats.csv
+  349  cut -d',' -f20,21 youtubeStats.csv | sort
+  350  cut -d',' -f20,21 youtubeStats.csv | sort | uniq -c | sort
+  351  cut -d',' -f20,21 youtubeStats.csv | sort | uniq -c | sort -nr
+  352  cut -d',' -f20,21 youtubeStats.csv | sort | uniq -c | sort -nr >> Assignment2.txt
+  353  vim Assignment2.txt
+-------------------------------------------------------------------------------
+3. Write the command you would use to find all the processes owned by you.  
+  354  whoami
+  355  ps -u farihasp24
+  356  ps -u farihasp24 >> Assignment2.txt
+  357  vim Assignment2.txt
+-------------------------------------------------------------------------------
+4. Open 2 terminals and login to the IBM VM
+  358  vi file.txt
+  359  vim Assignment2.txt
+-------------------------------------------------------------------------------
+5. What is the init process in Linux. Find the process id for the init process.
+  360  ps
+  361  ps aux
+  362  ps aux | grep 'systemd'
+  363  vim Assignment2.txt
+  364  ps aux | grep 'systemd' >> Assignment2.txt
+-------------------------------------------------------------------------------
+6. Explain the 'ps aux' command in no more than 4 sentences.
+  365  vim Assignment2.txt
+
+  366  history > cmds.log
