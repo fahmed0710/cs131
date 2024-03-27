@@ -1,0 +1,89 @@
+Worksheet 3 cmds.log  
+
+  424  cd cs131
+  425  ls
+  426  mkdir Worksheet3
+  427  cd Assignment2
+  428  ls
+  429  mv youtubeStats.csv ../Worksheet3/
+  430  ls
+  431  cd ../Worksheet3
+  432  ls
+  433  cd ..
+  434  ls
+  435  cd Worksheet3
+-------------------------------------------------------------------------------
+1. Sort the "highest_monthly_earnings" in order to find the highest monthly earner from 3 different countries: United States, United Kingdom, and India  
+  436  cut -d',' -f16 youtubeStats.csv
+  437  cut -d',' -f9,16 youtubeStats.csv
+  438  cut -d',' -f9,16 youtubeStats.csv | sort
+  439  man sort
+  440  cut -d',' -f9,16 youtubeStats.csv | sort | uniq -c
+  441  cut -d',' -f9,16 youtubeStats.csv | sort -k
+  442  cut -d',' -f9,16 youtubeStats.csv | sort -k "US"
+  443  sort -k 9,16 youtubeStats.csv
+  444  cut -d',' -f9,16 youtubeStats.csv | sort | grep "US" 
+  445  cut -d',' -f9,16 youtubeStats.csv | sort | grep "US" | grep "IN"
+  446  cut -d',' -f9,16 youtubeStats.csv | grep -e "US" -e "UK" -e "IN"
+  447  cut -d',' -f9,16 youtubeStats.csv | grep -e "US" -e "UK" -e "IN" | sort
+  448  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort
+  449  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq -c 
+  450  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq -c | sort -nr
+  451  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq
+  452  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -k 2
+  453  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -nrk 2
+  454  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -nr
+  455  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -n -k2,2 | uniq 
+  456  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -n -k2,2 | uniq | sort -nr
+  457  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -t',' -k2,2 -g | uniq | sort -nr
+  458  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sed 's/,//g' | sort -t',' -k2,2 -g | uniq | sort -nr
+  459  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq
+  460  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -nr
+  461  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort 
+  462  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -k 2
+  463  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort 
+  464  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -k 2
+  465  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -k 2,2
+  466  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -k 2,2 -g
+  467  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq
+  468  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -k 2,2 -nr
+  469  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr
+  470  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -t',' -k 2,2 -nr
+  471  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr
+  472  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort -t',' -k 2,2 -nr 
+  473  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr
+  474  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr |grep -m 1 "United States" -m 1 "United Kingdom" -m 1 "India"
+  475  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr |grep -m 1 "United States"
+  476  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr |grep -m 1 "United States"> ws3.txt
+  477  vim ws3.txt
+  478  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr >> ws3.txt
+  479  vim ws3.txt
+  480  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United States"
+  481  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United States" >> ws3.txt
+  482  vim ws3.txt
+  483  rm ws3.txt
+  484  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United States" >> ws3.txt
+  485  vim ws3.txt
+  486  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United Kingdom" >> ws3.txt
+  487  vim ws3.txt
+  488  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "India" >> ws3.txt
+  489  vim ws3.txt
+  490  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 -e "United States" -e "United Kingdom" -e "India"
+  491  cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 -e "United States\|United Kingdom\|India"
+  492  {      grep "United States" | head -n 1;     grep "United Kingdom" | head -n 1;     grep "India" | head -n 1; } < <(cut -d',' -f8,16 youtubeStats.csv | sort | uniq | sort -t',' -k 2,2 -nr)
+  493  vim ws3.txt
+-------------------------------------------------------------------------------
+2. Sort the "Subscribers" in order to find the highest subscribed channel from 3 different categories: Sports, Education, and Entertainment  
+  494  cut -d',' -3,5 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 2,2 -nr
+  495  cut -d',' -f3,5 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 2,2 -nr
+  496  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 2,2 -nr
+  497  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr
+  498  vim ws3.txt
+  499  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Sports"
+  500  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Sports" >> ws3.txt
+  501  vim ws3.txt
+  502  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Education" >> ws3.txt
+  503  vim ws3.txt
+  504  cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Entertainment" >> ws3.txt
+  505  vim ws3.txt
+  506  history > cmds.log

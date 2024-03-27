@@ -1,0 +1,31 @@
+1. Sort the "highest_monthly_earnings" in order to find the highest monthly earner from 3 different countries: United States, United Kingdom, India
+
+cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr: sorted the "highest_monthly_earnings"
+
+cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United States": find the highest monthly earner from the United States
+
+United States,9200000
+
+cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "United Kingdom": find the highest monthly earner from the United Kingdom
+
+United Kingdom,2000000
+
+cut -d',' -f8,16 youtubeStats.csv | grep -e "United States" -e "United Kingdom" -e "India" | sort | uniq | sort -t',' -k 2,2 -nr | grep -m 1 "India": find the highest monthly earner from India
+
+India,9000000
+-------------------------------------------------------------------------------
+2. Sort the "#Subscribers" in order to find the highest subscribed channel from 3 different categories: Sports, Education, and Entertainment
+
+cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr
+
+cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Sports": find the higheghest subscribed channel from the Sports category
+
+96000000,Sports
+
+cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Education": find the highest subscribed channel from the Education category
+
+162000000,Education
+
+cut -d',' -f5,3 youtubeStats.csv | grep -e "Sports" -e "Education" -e "Entertainment" | sort | uniq | sort -t',' -k 1,1 -nr | grep -m 1 "Entertainment": find the highest subscribed channel from the Entertainment category
+
+166000000,Entertainment
