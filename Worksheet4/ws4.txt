@@ -1,0 +1,4858 @@
+Script started on 2024-04-09 14:12:46-04:00
+-------------------------------------------------------------------------------
+1. Adding aliases to the .bashrc file
+bash-4.4$ vi .bashrc
+004h049h;0;0th?2004h24r2h2lmmm[H5l;1H".bashrc" 1L, 1C1Hm~                                                                               1H~                                                                               1H~                                                                               1H~                                                                               1H~                                                                               1H~                                                                               1H~                                                                               1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               ;1H~                                                                               1H5h5l[24;1H-- INSERT --[24;13H[1;1H5h5la5h5ll5h5li5h5la5h5ls5h5l 5h5ll5h5l=5h5l'5h5ll5h5ls5h5l 5h5l-5h5ll5h5la5h5lt5h5lr5h5l17H[1;17H5h5l16H[1;16H5h5l15H[1;15H5h5l14H[1;14H5h5llt5h5lr5h5l'5h5l1H[2;1H5h5la5h5ll5h5li5h5la5h5ls5h5l 5h5lw5h5l=5h5l'5h5ll5h5ls5h5l 5h5l-5h5ll5h5l 5h5l|5h5l 5h5lw5h5lc5h5l'5h;1H[2;20H5l5h5l;1H:004h5hwq25l004l".bashrc" 2L, 39C written
+004ll?25h049l;0;0tbash-4.4$ source. bash .bashrc
+bash-4.4$ l
+total 76
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Feb 23 00:07 Worksheet1
+-rw-rw-r-- 1 farihasp24 farihasp24     7 Feb 23 00:07 test.txt
+-rw-rw-r-- 1 farihasp24 farihasp24     6 Feb 23 00:07 newfile.txt
+-rw-rw-r-- 1 farihasp24 farihasp24 45859 Feb 23 00:38 music.txt
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Feb 23 19:53 Worksheet2
+drwxrwxr-x 5 farihasp24 farihasp24  4096 Mar  1 01:17 Assignment1
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Mar 26 20:43 Assignment2
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Mar 26 22:11 Worksheet3
+-rw-rw-r-- 1 farihasp24 farihasp24     0 Apr  9 14:12 ws4.txt
+bash-4.4$ ksls -ltr
+total 76
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Feb 23 00:07 Worksheet1
+-rw-rw-r-- 1 farihasp24 farihasp24     7 Feb 23 00:07 test.txt
+-rw-rw-r-- 1 farihasp24 farihasp24     6 Feb 23 00:07 newfile.txt
+-rw-rw-r-- 1 farihasp24 farihasp24 45859 Feb 23 00:38 music.txt
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Feb 23 19:53 Worksheet2
+drwxrwxr-x 5 farihasp24 farihasp24  4096 Mar  1 01:17 Assignment1
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Mar 26 20:43 Assignment2
+drwxrwxr-x 2 farihasp24 farihasp24  4096 Mar 26 22:11 Worksheet3
+-rw-rw-r-- 1 farihasp24 farihasp24     0 Apr  9 14:12 ws4.txt
+bash-4.4$ w
+     10      83     591
+bash-4.4$ ls -l | wc
+     10      83     591
+-------------------------------------------------------------------------------
+2. Find the mean subscribers in the United States and India
+bash-4.4$ lpwd
+/mnt/scratch/FA23_CS131_Ashish/farihasp24/cs131
+bash-4.4$ ls Worksheet3/youtubeSttsaats.scsv Worksheet4/
+cp: cannot create regular file 'Worksheet4/': Not a directory
+bash-4.4$ ls
+Assignment1  music.txtest.txt    Worksheet2  ws4.txt
+Assignment2  newfile.txt  Worksheet1  Worksheet3
+bash-4.4$ mkdir Worskksheet4
+bash-4.4$ mkdir Worksheet4[C[C[C[CsWorksheet3/youtubeStats.csv Worksheet4/
+bash-4.4$ cd Worksheet4
+bash-4.4$ ls
+youtubeStats.csv
+bash-4.4$ mkdir Subscribers
+bash-4.4$ cut -d ',' -f8,9 youtubeStats. scsv
+Country,Abbreviation
+India,IN
+United States,US
+United States,US
+United States,US
+India,IN
+nan,nan
+United States,US
+Japan,JP
+Russia,RU
+United States,US
+India,IN
+United States,US
+nan,nan
+South Korea,KR
+nan,nan
+India,IN
+United Kingdom,GB
+South Korea,KR
+United States,US
+Canada,CA
+South Korea,KR
+India,IN
+United States,US
+Brazil,BR
+India,IN
+India,IN
+India,IN
+India,IN
+United States,US
+United States,US
+India,IN
+Argentina,AR
+India,IN
+India,IN
+India,IN
+United States,US
+United States,US
+India,IN
+nan,nan
+United Kingdom,GB
+India,IN
+United States,US
+United States,US
+United States,US
+Chile,CL
+United States,US
+Russia,RU
+India,IN
+nan,nan
+United States,US
+Cuba,CU
+nan,nan
+El Salvador,SV
+India,IN
+Brazil,BR
+Brazil,BR
+Pakistan,PK
+nan,nan
+United States,US
+Brazil,BR
+Philippines,PH
+Thailand,TH
+nan,nan
+Colombia,CO
+Russia,RU
+Pakistan,PK
+India,IN
+United States,US
+United States,US
+Barbados,BB
+India,IN
+Mexico,MX
+United States,US
+Mexico,MX
+nan,nan
+nan,nan
+United Arab Emirates,AE
+nan,nan
+India,IN
+United States,US
+Canada,CA
+Spain,ES
+Thailand,TH
+Brazil,BR
+United States,US
+Saudi Arabia,SA
+India,IN
+United States,US
+United States,US
+India,IN
+United States,US
+United States,US
+United States,US
+Thailand,TH
+India,IN
+India,IN
+Brazil,BR
+United States,US
+United States,US
+India,IN
+nan,nan
+United States,US
+nan,nan
+nan,nan
+nan,nan
+Argentina,AR
+India,IN
+India,IN
+India,IN
+nan,nan
+United States,US
+United States,US
+United States,US
+nan,nan
+nan,nan
+India,IN
+Colombia,CO
+Indonesia,ID
+India,IN
+Spain,ES
+Brazil,BR
+United States,US
+nan,nan
+United States,US
+India,IN
+Thailand,TH
+India,IN
+United Kingdom,GB
+India,IN
+Indonesia,ID
+United States,US
+India,IN
+Turkey,TR
+United States,US
+Canada,CA
+nan,nan
+Colombia,CO
+United Kingdom,GB
+Brazil,BR
+India,IN
+nan,nan
+Philippines,PH
+Mexico,MX
+India,IN
+India,IN
+United States,US
+United States,US
+United States,US
+United States,US
+nan,nan
+United Kingdom,GB
+Venezuela,VE
+United States,US
+Argentina,AR
+United States,US
+United States,US
+India,IN
+India,IN
+Kuwait,KW
+Indonesia,ID
+United States,US
+United States,US
+United States,US
+United Kingdom,GB
+United States,US
+Jordan,JO
+nan,nan
+Netherlands,NL
+United States,US
+nan,nan
+Canada,CA
+India,IN
+United States,US
+nan,nan
+Argentina,AR
+United States,US
+Brazil,BR
+Spain,ES
+nan,nan
+India,IN
+nan,nan
+United States,US
+India,IN
+nan,nan
+India,IN
+Pakistan,PK
+India,IN
+United States,US
+nan,nan
+nan,nan
+Singapore,SG
+Australia,AU
+Colombia,CO
+United States,US
+United States,US
+South Korea,KR
+United States,US
+United Kingdom,GB
+United States,US
+India,IN
+nan,nan
+India,IN
+nan,nan
+United States,US
+Brazil,BR
+United States,US
+Colombia,CO
+United States,US
+Philippines,PH
+United States,US
+India,IN
+United States,US
+Italy,IT
+India,IN
+United States,US
+Japan,JP
+United States,US
+Saudi Arabia,SA
+nan,nan
+United States,US
+nan,nan
+Indonesia,ID
+Canada,CA
+United States,US
+Mexico,MX
+United States,US
+nan,nan
+United States,US
+nan,nan
+United States,US
+Indonesia,ID
+United States,US
+United Kingdom,GB
+nan,nan
+United States,US
+nan,nan
+nan,nan
+India,IN
+United States,US
+Canada,CA
+Indonesia,ID
+Colombia,CO
+United Kingdom,GB
+Mexico,MX
+United States,US
+nan,nan
+United States,US
+Australia,AU
+United States,US
+United States,US
+South Korea,KR
+United States,US
+nan,nan
+India,IN
+Mexico,MX
+United Arab Emirates,AE
+United States,US
+Argentina,AR
+nan,nan
+Turkey,TR
+United States,US
+United States,US
+United Kingdom,GB
+Brazil,BR
+nan,nan
+United States,US
+United States,US
+United States,US
+United States,US
+nan,nan
+United States,US
+United States,US
+United States,US
+Canada,CA
+United Kingdom,GB
+United States,US
+nan,nan
+Mexico,MX
+United States,US
+United States,US
+United Kingdom,GB
+United Kingdom,GB
+United Kingdom,GB
+India,IN
+Brazil,BR
+United States,US
+United States,US
+United States,US
+nan,nan
+India,IN
+Thailand,TH
+United States,US
+India,IN
+United States,US
+Germany,DE
+India,IN
+Argentina,AR
+India,IN
+India,IN
+United States,US
+Jordan,JO
+Mexico,MX
+nan,nan
+United States,US
+nan,nan
+India,IN
+India,IN
+United States,US
+Saudi Arabia,SA
+United States,US
+United States,US
+India,IN
+United States,US
+United States,US
+Argentina,AR
+France,FR
+United States,US
+United States,US
+United States,US
+United States,US
+Japan,JP
+United States,US
+United States,US
+United States,US
+Mexico,MX
+United States,US
+United States,US
+United Kingdom,GB
+United Kingdom,GB
+nan,nan
+nan,nan
+nan,nan
+United Arab Emirates,AE
+Brazil,BR
+India,IN
+United States,US
+United States,US
+Mexico,MX
+nan,nan
+Chile,CL
+Germany,DE
+India,IN
+United States,US
+United States,US
+India,IN
+United States,US
+India,IN
+India,IN
+nan,nan
+Philippines,PH
+United States,US
+Indonesia,ID
+United States,US
+Brazil,BR
+United States,US
+United States,US
+India,IN
+Brazil,BR
+United States,US
+United States,US
+nan,nan
+United States,US
+Brazil,BR
+Germany,DE
+United States,US
+United States,US
+nan,nan
+Russia,RU
+United States,US
+Indonesia,ID
+Argentina,AR
+Sweden,SE
+South Korea,KR
+Australia,AU
+United States,US
+Brazil,BR
+United States,US
+Afghanistan,AF
+India,IN
+Ukraine,UA
+India,IN
+United Kingdom,GB
+nan,nan
+Indonesia,ID
+Colombia,CO
+United Arab Emirates,AE
+nan,nan
+India,IN
+Latvia,LV
+United States,US
+Indonesia,ID
+United States,US
+United States,US
+Brazil,BR
+nan,nan
+United States,US
+United States,US
+United States,US
+United States,US
+United States,US
+United States,US
+United States,US
+United Kingdom,GB
+Canada,CA
+India,IN
+Brazil,BR
+Germany,DE
+United States,US
+United States,US
+United States,US
+nan,nan
+United States,US
+United Kingdom,GB
+United Kingdom,GB
+United States,US
+United States,US
+Turkey,TR
+United States,US
+United States,US
+India,IN
+India,IN
+Mexico,MX
+India,IN
+Switzerland,CH
+India,IN
+nan,nan
+nan,nan
+United States,US
+India,IN
+United States,US
+United States,US
+nan,nan
+nan,nan
+United States,US
+Mexico,MX
+India,IN
+Brazil,BR
+United Kingdom,GB
+South Korea,KR
+Russia,RU
+nan,nan
+Mexico,MX
+United States,US
+United Kingdom,GB
+nan,nan
+nan,nan
+United States,US
+Ukraine,UA
+India,IN
+Spain,ES
+nan,nan
+India,IN
+United States,US
+Thailand,TH
+Saudi Arabia,SA
+Brazil,BR
+Russia,RU
+nan,nan
+Russia,RU
+Indonesia,ID
+United States,US
+Spain,ES
+Thailand,TH
+nan,nan
+United States,US
+Indonesia,ID
+United States,US
+United States,US
+nan,nan
+nan,nan
+Brazil,BR
+United States,US
+Indonesia,ID
+France,FR
+United States,US
+South Korea,KR
+nan,nan
+Brazil,BR
+Australia,AU
+United States,US
+United States,US
+United States,US
+Spain,ES
+nan,nan
+United States,US
+United States,US
+Argentina,AR
+United States,US
+United States,US
+Vietnam,VN
+United States,US
+United States,US
+nan,nan
+India,IN
+United States,US
+South Korea,KR
+South Korea,KR
+United States,US
+India,IN
+Indonesia,ID
+nan,nan
+Brazil,BR
+Ukraine,UA
+Malaysia,MY
+Argentina,AR
+Thailand,TH
+Mexico,MX
+China,CN
+Australia,AU
+Chile,CL
+South Korea,KR
+India,IN
+India,IN
+India,IN
+United States,US
+United States,US
+Thailand,TH
+Iraq,IQ
+nan,nan
+United States,US
+India,IN
+India,IN
+Australia,AU
+nan,nan
+United States,US
+Brazil,BR
+Australia,AU
+Argentina,AR
+Spain,ES
+Russia,RU
+Indonesia,ID
+United States,US
+United Kingdom,GB
+India,IN
+nan,nan
+United States,US
+India,IN
+United States,US
+United States,US
+United States,US
+India,IN
+United States,US
+Brazil,BR
+nan,nan
+nan,nan
+nan,nan
+Indonesia,ID
+Brazil,BR
+nan,nan
+United States,US
+United States,US
+United States,US
+Mexico,MX
+Philippines,PH
+Mexico,MX
+Spain,ES
+India,IN
+India,IN
+India,IN
+Germany,DE
+United States,US
+United States,US
+United States,US
+India,IN
+United States,US
+United States,US
+Thailand,TH
+United States,US
+Thailand,TH
+nan,nan
+nan,nan
+Thailand,TH
+United States,US
+United States,US
+United States,US
+United Kingdom,GB
+United Kingdom,GB
+United States,US
+India,IN
+United States,US
+United Kingdom,GB
+United States,US
+United States,US
+Brazil,BR
+United Kingdom,GB
+Vietnam,VN
+Thailand,TH
+Singapore,SG
+United States,US
+Spain,ES
+nan,nan
+Indonesia,ID
+nan,nan
+United States,US
+Brazil,BR
+nan,nan
+United States,US
+France,FR
+Sweden,SE
+United States,US
+Mexico,MX
+nan,nan
+India,IN
+Mexico,MX
+nan,nan
+Mexico,MX
+Russia,RU
+United States,US
+United States,US
+Argentina,AR
+Brazil,BR
+United States,US
+Colombia,CO
+India,IN
+India,IN
+Indonesia,ID
+United States,US
+India,IN
+India,IN
+Singapore,SG
+India,IN
+India,IN
+United States,US
+Mexico,MX
+nan,nan
+Canada,CA
+Brazil,BR
+United States,US
+Mexico,MX
+nan,nan
+Saudi Arabia,SA
+India,IN
+Saudi Arabia,SA
+Brazil,BR
+United States,US
+India,IN
+United States,US
+Egypt,EG
+India,IN
+United Arab Emirates,AE
+United States,US
+United States,US
+United Kingdom,GB
+Thailand,TH
+United States,US
+Indonesia,ID
+Spain,ES
+United States,US
+India,IN
+Russia,RU
+India,IN
+India,IN
+India,IN
+Philippines,PH
+India,IN
+India,IN
+India,IN
+Turkey,TR
+United States,US
+India,IN
+United States,US
+nan,nan
+Indonesia,ID
+Andorra,AD
+Philippines,PH
+United States,US
+United States,US
+Spain,ES
+nan,nan
+Egypt,EG
+Russia,RU
+South Korea,KR
+Argentina,AR
+Philippines,PH
+Russia,RU
+United Kingdom,GB
+United Kingdom,GB
+India,IN
+Brazil,BR
+United States,US
+United States,US
+Mexico,MX
+United States,US
+United States,US
+India,IN
+India,IN
+India,IN
+nan,nan
+United States,US
+Indonesia,ID
+Japan,JP
+Brazil,BR
+India,IN
+United States,US
+Indonesia,ID
+United States,US
+United States,US
+Spain,ES
+Thailand,TH
+nan,nan
+Russia,RU
+Brazil,BR
+Japan,JP
+United States,US
+United States,US
+United States,US
+Australia,AU
+Ukraine,UA
+United States,US
+Brazil,BR
+nan,nan
+Germany,DE
+United States,US
+United States,US
+Saudi Arabia,SA
+United States,US
+Spain,ES
+United States,US
+India,IN
+United States,US
+United States,US
+United States,US
+India,IN
+United States,US
+Brazil,BR
+Ecuador,EC
+Spain,ES
+United States,US
+Brazil,BR
+United States,US
+United States,US
+Brazil,BR
+United States,US
+Mexico,MX
+India,IN
+Brazil,BR
+United States,US
+United States,US
+India,IN
+Brazil,BR
+United States,US
+United Kingdom,GB
+United States,US
+South Korea,KR
+India,IN
+United States,US
+Thailand,TH
+India,IN
+United States,US
+Morocco,MA
+nan,nan
+Canada,CA
+South Korea,KR
+India,IN
+Peru,PE
+nan,nan
+Saudi Arabia,SA
+France,FR
+United States,US
+United States,US
+India,IN
+United States,US
+United States,US
+United States,US
+India,IN
+nan,nan
+United States,US
+India,IN
+United States,US
+United States,US
+Philippines,PH
+Brazil,BR
+Ukraine,UA
+Netherlands,NL
+United Kingdom,GB
+Mexico,MX
+India,IN
+nan,nan
+nan,nan
+India,IN
+India,IN
+United States,US
+India,IN
+nan,nan
+nan,nan
+Australia,AU
+United Arab Emirates,AE
+Indonesia,ID
+United States,US
+United States,US
+United Kingdom,GB
+Thailand,TH
+Brazil,BR
+Sweden,SE
+Mexico,MX
+Russia,RU
+Spain,ES
+Mexico,MX
+United States,US
+India,IN
+India,IN
+Brazil,BR
+Brazil,BR
+Jordan,JO
+United States,US
+nan,nan
+India,IN
+United States,US
+Bangladesh,BD
+United States,US
+United States,US
+United States,US
+nan,nan
+United States,US
+Canada,CA
+nan,nan
+Netherlands,NL
+Mexico,MX
+Pakistan,PK
+India,IN
+India,IN
+Brazil,BR
+India,IN
+Brazil,BR
+India,IN
+India,IN
+India,IN
+Vietnam,VN
+Brazil,BR
+India,IN
+nan,nan
+Spain,ES
+Philippines,PH
+United States,US
+United States,US
+India,IN
+United Kingdom,GB
+United States,US
+Indonesia,ID
+Canada,CA
+India,IN
+United Kingdom,GB
+United Kingdom,GB
+Ukraine,UA
+India,IN
+United Kingdom,GB
+India,IN
+United States,US
+United States,US
+United States,US
+Colombia,CO
+India,IN
+India,IN
+India,IN
+United States,US
+Thailand,TH
+United States,US
+Philippines,PH
+United States,US
+United States,US
+India,IN
+United States,US
+United States,US
+nan,nan
+United States,US
+United States,US
+Russia,RU
+United States,US
+Ukraine,UA
+United States,US
+United States,US
+India,IN
+Saudi Arabia,SA
+Canada,CA
+United States,US
+Russia,RU
+Finland,FI
+nan,nan
+India,IN
+Indonesia,ID
+Brazil,BR
+United States,US
+Colombia,CO
+United States,US
+India,IN
+India,IN
+United States,US
+Philippines,PH
+United States,US
+nan,nan
+India,IN
+nan,nan
+Brazil,BR
+Brazil,BR
+United States,US
+Brazil,BR
+Ecuador,EC
+Brazil,BR
+United States,US
+Samoa,WS
+Italy,IT
+Brazil,BR
+Indonesia,ID
+France,FR
+India,IN
+South Korea,KR
+United States,US
+Pakistan,PK
+Mexico,MX
+Brazil,BR
+United States,US
+Brazil,BR
+Brazil,BR
+Spain,ES
+South Korea,KR
+United States,US
+United States,US
+United Arab Emirates,AE
+nan,nan
+United States,US
+Ukraine,UA
+Indonesia,ID
+United Kingdom,GB
+Iraq,IQ
+Spain,ES
+nan,nan
+Canada,CA
+United States,US
+India,IN
+United States,US
+India,IN
+nan,nan
+Mexico,MX
+Spain,ES
+United States,US
+nan,nan
+United States,US
+United States,US
+United States,US
+nan,nan
+Brazil,BR
+United States,US
+Colombia,CO
+United Kingdom,GB
+United States,US
+South Korea,KR
+United States,US
+United Kingdom,GB
+United Kingdom,GB
+United States,US
+United States,US
+nan,nan
+India,IN
+Mexico,MX
+Spain,ES
+United States,US
+Mexico,MX
+United States,US
+nan,nan
+Brazil,BR
+India,IN
+Mexico,MX
+India,IN
+India,IN
+India,IN
+Brazil,BR
+India,IN
+nan,nan
+India,IN
+Pakistan,PK
+United States,US
+India,IN
+nan,nan
+United States,US
+Mexico,MX
+Brazil,BR
+Indonesia,ID
+Spain,ES
+Canada,CA
+Spain,ES
+India,IN
+India,IN
+United Kingdom,GB
+United States,US
+India,IN
+nan,nan
+nan,nan
+United States,US
+United States,US
+United States,US
+Brazil,BR
+India,IN
+United Kingdom,GB
+Sweden,SE
+India,IN
+bash-4.4$ cut -d',' -f8,9 youtubeStats.csvCP youtubeStats.csv1P youtubeStats.csv
+Country
+India
+United States
+United States
+United States
+India
+nan
+United States
+Japan
+Russia
+United States
+India
+United States
+nan
+South Korea
+nan
+India
+United Kingdom
+South Korea
+United States
+Canada
+South Korea
+India
+United States
+Brazil
+India
+India
+India
+India
+United States
+United States
+India
+Argentina
+India
+India
+India
+United States
+United States
+India
+nan
+United Kingdom
+India
+United States
+United States
+United States
+Chile
+United States
+Russia
+India
+nan
+United States
+Cuba
+nan
+El Salvador
+India
+Brazil
+Brazil
+Pakistan
+nan
+United States
+Brazil
+Philippines
+Thailand
+nan
+Colombia
+Russia
+Pakistan
+India
+United States
+United States
+Barbados
+India
+Mexico
+United States
+Mexico
+nan
+nan
+United Arab Emirates
+nan
+India
+United States
+Canada
+Spain
+Thailand
+Brazil
+United States
+Saudi Arabia
+India
+United States
+United States
+India
+United States
+United States
+United States
+Thailand
+India
+India
+Brazil
+United States
+United States
+India
+nan
+United States
+nan
+nan
+nan
+Argentina
+India
+India
+India
+nan
+United States
+United States
+United States
+nan
+nan
+India
+Colombia
+Indonesia
+India
+Spain
+Brazil
+United States
+nan
+United States
+India
+Thailand
+India
+United Kingdom
+India
+Indonesia
+United States
+India
+Turkey
+United States
+Canada
+nan
+Colombia
+United Kingdom
+Brazil
+India
+nan
+Philippines
+Mexico
+India
+India
+United States
+United States
+United States
+United States
+nan
+United Kingdom
+Venezuela
+United States
+Argentina
+United States
+United States
+India
+India
+Kuwait
+Indonesia
+United States
+United States
+United States
+United Kingdom
+United States
+Jordan
+nan
+Netherlands
+United States
+nan
+Canada
+India
+United States
+nan
+Argentina
+United States
+Brazil
+Spain
+nan
+India
+nan
+United States
+India
+nan
+India
+Pakistan
+India
+United States
+nan
+nan
+Singapore
+Australia
+Colombia
+United States
+United States
+South Korea
+United States
+United Kingdom
+United States
+India
+nan
+India
+nan
+United States
+Brazil
+United States
+Colombia
+United States
+Philippines
+United States
+India
+United States
+Italy
+India
+United States
+Japan
+United States
+Saudi Arabia
+nan
+United States
+nan
+Indonesia
+Canada
+United States
+Mexico
+United States
+nan
+United States
+nan
+United States
+Indonesia
+United States
+United Kingdom
+nan
+United States
+nan
+nan
+India
+United States
+Canada
+Indonesia
+Colombia
+United Kingdom
+Mexico
+United States
+nan
+United States
+Australia
+United States
+United States
+South Korea
+United States
+nan
+India
+Mexico
+United Arab Emirates
+United States
+Argentina
+nan
+Turkey
+United States
+United States
+United Kingdom
+Brazil
+nan
+United States
+United States
+United States
+United States
+nan
+United States
+United States
+United States
+Canada
+United Kingdom
+United States
+nan
+Mexico
+United States
+United States
+United Kingdom
+United Kingdom
+United Kingdom
+India
+Brazil
+United States
+United States
+United States
+nan
+India
+Thailand
+United States
+India
+United States
+Germany
+India
+Argentina
+India
+India
+United States
+Jordan
+Mexico
+nan
+United States
+nan
+India
+India
+United States
+Saudi Arabia
+United States
+United States
+India
+United States
+United States
+Argentina
+France
+United States
+United States
+United States
+United States
+Japan
+United States
+United States
+United States
+Mexico
+United States
+United States
+United Kingdom
+United Kingdom
+nan
+nan
+nan
+United Arab Emirates
+Brazil
+India
+United States
+United States
+Mexico
+nan
+Chile
+Germany
+India
+United States
+United States
+India
+United States
+India
+India
+nan
+Philippines
+United States
+Indonesia
+United States
+Brazil
+United States
+United States
+India
+Brazil
+United States
+United States
+nan
+United States
+Brazil
+Germany
+United States
+United States
+nan
+Russia
+United States
+Indonesia
+Argentina
+Sweden
+South Korea
+Australia
+United States
+Brazil
+United States
+Afghanistan
+India
+Ukraine
+India
+United Kingdom
+nan
+Indonesia
+Colombia
+United Arab Emirates
+nan
+India
+Latvia
+United States
+Indonesia
+United States
+United States
+Brazil
+nan
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United Kingdom
+Canada
+India
+Brazil
+Germany
+United States
+United States
+United States
+nan
+United States
+United Kingdom
+United Kingdom
+United States
+United States
+Turkey
+United States
+United States
+India
+India
+Mexico
+India
+Switzerland
+India
+nan
+nan
+United States
+India
+United States
+United States
+nan
+nan
+United States
+Mexico
+India
+Brazil
+United Kingdom
+South Korea
+Russia
+nan
+Mexico
+United States
+United Kingdom
+nan
+nan
+United States
+Ukraine
+India
+Spain
+nan
+India
+United States
+Thailand
+Saudi Arabia
+Brazil
+Russia
+nan
+Russia
+Indonesia
+United States
+Spain
+Thailand
+nan
+United States
+Indonesia
+United States
+United States
+nan
+nan
+Brazil
+United States
+Indonesia
+France
+United States
+South Korea
+nan
+Brazil
+Australia
+United States
+United States
+United States
+Spain
+nan
+United States
+United States
+Argentina
+United States
+United States
+Vietnam
+United States
+United States
+nan
+India
+United States
+South Korea
+South Korea
+United States
+India
+Indonesia
+nan
+Brazil
+Ukraine
+Malaysia
+Argentina
+Thailand
+Mexico
+China
+Australia
+Chile
+South Korea
+India
+India
+India
+United States
+United States
+Thailand
+Iraq
+nan
+United States
+India
+India
+Australia
+nan
+United States
+Brazil
+Australia
+Argentina
+Spain
+Russia
+Indonesia
+United States
+United Kingdom
+India
+nan
+United States
+India
+United States
+United States
+United States
+India
+United States
+Brazil
+nan
+nan
+nan
+Indonesia
+Brazil
+nan
+United States
+United States
+United States
+Mexico
+Philippines
+Mexico
+Spain
+India
+India
+India
+Germany
+United States
+United States
+United States
+India
+United States
+United States
+Thailand
+United States
+Thailand
+nan
+nan
+Thailand
+United States
+United States
+United States
+United Kingdom
+United Kingdom
+United States
+India
+United States
+United Kingdom
+United States
+United States
+Brazil
+United Kingdom
+Vietnam
+Thailand
+Singapore
+United States
+Spain
+nan
+Indonesia
+nan
+United States
+Brazil
+nan
+United States
+France
+Sweden
+United States
+Mexico
+nan
+India
+Mexico
+nan
+Mexico
+Russia
+United States
+United States
+Argentina
+Brazil
+United States
+Colombia
+India
+India
+Indonesia
+United States
+India
+India
+Singapore
+India
+India
+United States
+Mexico
+nan
+Canada
+Brazil
+United States
+Mexico
+nan
+Saudi Arabia
+India
+Saudi Arabia
+Brazil
+United States
+India
+United States
+Egypt
+India
+United Arab Emirates
+United States
+United States
+United Kingdom
+Thailand
+United States
+Indonesia
+Spain
+United States
+India
+Russia
+India
+India
+India
+Philippines
+India
+India
+India
+Turkey
+United States
+India
+United States
+nan
+Indonesia
+Andorra
+Philippines
+United States
+United States
+Spain
+nan
+Egypt
+Russia
+South Korea
+Argentina
+Philippines
+Russia
+United Kingdom
+United Kingdom
+India
+Brazil
+United States
+United States
+Mexico
+United States
+United States
+India
+India
+India
+nan
+United States
+Indonesia
+Japan
+Brazil
+India
+United States
+Indonesia
+United States
+United States
+Spain
+Thailand
+nan
+Russia
+Brazil
+Japan
+United States
+United States
+United States
+Australia
+Ukraine
+United States
+Brazil
+nan
+Germany
+United States
+United States
+Saudi Arabia
+United States
+Spain
+United States
+India
+United States
+United States
+United States
+India
+United States
+Brazil
+Ecuador
+Spain
+United States
+Brazil
+United States
+United States
+Brazil
+United States
+Mexico
+India
+Brazil
+United States
+United States
+India
+Brazil
+United States
+United Kingdom
+United States
+South Korea
+India
+United States
+Thailand
+India
+United States
+Morocco
+nan
+Canada
+South Korea
+India
+Peru
+nan
+Saudi Arabia
+France
+United States
+United States
+India
+United States
+United States
+United States
+India
+nan
+United States
+India
+United States
+United States
+Philippines
+Brazil
+Ukraine
+Netherlands
+United Kingdom
+Mexico
+India
+nan
+nan
+India
+India
+United States
+India
+nan
+nan
+Australia
+United Arab Emirates
+Indonesia
+United States
+United States
+United Kingdom
+Thailand
+Brazil
+Sweden
+Mexico
+Russia
+Spain
+Mexico
+United States
+India
+India
+Brazil
+Brazil
+Jordan
+United States
+nan
+India
+United States
+Bangladesh
+United States
+United States
+United States
+nan
+United States
+Canada
+nan
+Netherlands
+Mexico
+Pakistan
+India
+India
+Brazil
+India
+Brazil
+India
+India
+India
+Vietnam
+Brazil
+India
+nan
+Spain
+Philippines
+United States
+United States
+India
+United Kingdom
+United States
+Indonesia
+Canada
+India
+United Kingdom
+United Kingdom
+Ukraine
+India
+United Kingdom
+India
+United States
+United States
+United States
+Colombia
+India
+India
+India
+United States
+Thailand
+United States
+Philippines
+United States
+United States
+India
+United States
+United States
+nan
+United States
+United States
+Russia
+United States
+Ukraine
+United States
+United States
+India
+Saudi Arabia
+Canada
+United States
+Russia
+Finland
+nan
+India
+Indonesia
+Brazil
+United States
+Colombia
+United States
+India
+India
+United States
+Philippines
+United States
+nan
+India
+nan
+Brazil
+Brazil
+United States
+Brazil
+Ecuador
+Brazil
+United States
+Samoa
+Italy
+Brazil
+Indonesia
+France
+India
+South Korea
+United States
+Pakistan
+Mexico
+Brazil
+United States
+Brazil
+Brazil
+Spain
+South Korea
+United States
+United States
+United Arab Emirates
+nan
+United States
+Ukraine
+Indonesia
+United Kingdom
+Iraq
+Spain
+nan
+Canada
+United States
+India
+United States
+India
+nan
+Mexico
+Spain
+United States
+nan
+United States
+United States
+United States
+nan
+Brazil
+United States
+Colombia
+United Kingdom
+United States
+South Korea
+United States
+United Kingdom
+United Kingdom
+United States
+United States
+nan
+India
+Mexico
+Spain
+United States
+Mexico
+United States
+nan
+Brazil
+India
+Mexico
+India
+India
+India
+Brazil
+India
+nan
+India
+Pakistan
+United States
+India
+nan
+United States
+Mexico
+Brazil
+Indonesia
+Spain
+Canada
+Spain
+India
+India
+United Kingdom
+United States
+India
+nan
+nan
+United States
+United States
+United States
+Brazil
+India
+United Kingdom
+Sweden
+India
+bash-4.4$ cut -d',' -f8 youtubeStats.csv[C3,
+subscribers,Country
+245000000,India
+170000000,United States
+166000000,United States
+162000000,United States
+159000000,India
+119000000,nan
+112000000,United States
+111000000,Japan
+106000000,Russia
+98900000,United States
+96700000,India
+96000000,United States
+93600000,nan
+89800000,South Korea
+86900000,nan
+83000000,India
+80100000,United Kingdom
+75600000,South Korea
+75000000,United States
+71600000,Canada
+71300000,South Korea
+70500000,India
+68200000,United States
+66500000,Brazil
+65900000,India
+65600000,India
+64600000,India
+61000000,India
+59500000,United States
+59500000,United States
+59300000,India
+58400000,Argentina
+58000000,India
+57600000,India
+57200000,India
+56900000,United States
+56400000,United States
+54600000,India
+54000000,nan
+53500000,United Kingdom
+53300000,India
+52900000,United States
+52700000,United States
+52200000,United States
+48100000,Chile
+47900000,United States
+47500000,Russia
+47400000,India
+46800000,nan
+46600000,United States
+46300000,Cuba
+46100000,nan
+46100000,El Salvador
+45500000,India
+45200000,Brazil
+44700000,Brazil
+44600000,Pakistan
+44500000,nan
+44200000,United States
+44200000,Brazil
+44200000,Philippines
+43700000,Thailand
+43600000,nan
+43500000,Colombia
+43200000,Russia
+43200000,Pakistan
+42500000,India
+42400000,United States
+42400000,United States
+41900000,Barbados
+41400000,India
+41300000,Mexico
+40900000,United States
+40600000,Mexico
+40400000,nan
+40300000,nan
+39700000,United Arab Emirates
+39400000,nan
+39200000,India
+39200000,United States
+39200000,Canada
+39100000,Spain
+39000000,Thailand
+38900000,Brazil
+38600000,United States
+38400000,Saudi Arabia
+38300000,India
+38200000,United States
+38200000,United States
+38200000,India
+38000000,United States
+37900000,United States
+37600000,United States
+37500000,Thailand
+37200000,India
+37000000,India
+37000000,Brazil
+36700000,United States
+36600000,United States
+36600000,India
+36500000,nan
+36300000,United States
+36300000,nan
+36200000,nan
+36100000,nan
+35700000,Argentina
+35500000,India
+35500000,India
+35400000,India
+35400000,nan
+35200000,United States
+35200000,United States
+34900000,United States
+34600000,nan
+34400000,nan
+34300000,India
+34100000,Colombia
+34000000,Indonesia
+34000000,India
+33800000,Spain
+33800000,Brazil
+33700000,United States
+33700000,nan
+33600000,United States
+33500000,India
+33500000,Thailand
+33500000,India
+33400000,United Kingdom
+33400000,India
+33300000,Indonesia
+32800000,United States
+32700000,India
+32700000,Turkey
+32700000,United States
+32600000,Canada
+32200000,nan
+32100000,Colombia
+32100000,United Kingdom
+32100000,Brazil
+32000000,India
+31900000,nan
+31900000,Philippines
+31800000,Mexico
+31700000,India
+31700000,India
+31700000,United States
+31700000,United States
+31600000,United States
+31600000,United States
+31400000,nan
+31400000,United Kingdom
+31200000,Venezuela
+31200000,United States
+31200000,Argentina
+30700000,United States
+30700000,United States
+30700000,India
+30500000,India
+30500000,Kuwait
+30400000,Indonesia
+30400000,United States
+30400000,United States
+30300000,United States
+30200000,United Kingdom
+30200000,United States
+30200000,Jordan
+30100000,nan
+30100000,Netherlands
+30100000,United States
+30100000,nan
+30000000,Canada
+29800000,India
+29600000,United States
+29300000,nan
+29300000,Argentina
+29200000,United States
+29200000,Brazil
+29200000,Spain
+29000000,nan
+28900000,India
+28500000,nan
+28400000,United States
+28400000,India
+28300000,nan
+28300000,India
+28300000,Pakistan
+28200000,India
+28200000,United States
+28100000,nan
+28000000,nan
+27800000,Singapore
+27800000,Australia
+27700000,Colombia
+27500000,United States
+27500000,United States
+27400000,South Korea
+27400000,United States
+27400000,United Kingdom
+27300000,United States
+27300000,India
+27100000,nan
+27100000,India
+27100000,nan
+27000000,United States
+26900000,Brazil
+26700000,United States
+26700000,Colombia
+26700000,United States
+26500000,Philippines
+26500000,United States
+26400000,India
+26400000,United States
+26400000,Italy
+26300000,India
+26200000,United States
+26200000,Japan
+26100000,United States
+26100000,Saudi Arabia
+26000000,nan
+26000000,United States
+26000000,nan
+25900000,Indonesia
+25800000,Canada
+25700000,United States
+25700000,Mexico
+25700000,United States
+25600000,nan
+25600000,United States
+25500000,nan
+25500000,United States
+25400000,Indonesia
+25400000,United States
+25300000,United Kingdom
+25200000,nan
+25200000,United States
+25200000,nan
+25200000,nan
+25200000,India
+25100000,United States
+25100000,Canada
+25000000,Indonesia
+25000000,Colombia
+24800000,United Kingdom
+24800000,Mexico
+24800000,United States
+24800000,nan
+24700000,United States
+24700000,Australia
+24600000,United States
+24600000,United States
+24500000,South Korea
+24400000,United States
+24300000,nan
+24300000,India
+24200000,Mexico
+24200000,United Arab Emirates
+24100000,United States
+24100000,Argentina
+24100000,nan
+24100000,Turkey
+24100000,United States
+24100000,United States
+24100000,United Kingdom
+24000000,Brazil
+24000000,nan
+24000000,United States
+23900000,United States
+23900000,United States
+23900000,United States
+23800000,nan
+23800000,United States
+23800000,United States
+23700000,United States
+23700000,Canada
+23700000,United Kingdom
+23700000,United States
+23600000,nan
+23600000,Mexico
+23600000,United States
+23600000,United States
+23600000,United Kingdom
+23500000,United Kingdom
+23500000,United Kingdom
+23400000,India
+23400000,Brazil
+23300000,United States
+23200000,United States
+23200000,United States
+23200000,nan
+23100000,India
+23100000,Thailand
+23100000,United States
+23100000,India
+23100000,United States
+23000000,Germany
+23000000,India
+23000000,Argentina
+23000000,India
+22900000,India
+22900000,United States
+22900000,Jordan
+22900000,Mexico
+22800000,nan
+22700000,United States
+22700000,nan
+22600000,India
+22600000,India
+22600000,United States
+22600000,Saudi Arabia
+22600000,United States
+22600000,United States
+22500000,India
+22500000,United States
+22500000,United States
+22400000,Argentina
+22300000,France
+22300000,United States
+22200000,United States
+22000000,United States
+22000000,United States
+22000000,Japan
+21900000,United States
+21900000,United States
+21900000,United States
+21900000,Mexico
+21800000,United States
+21800000,United States
+21800000,United Kingdom
+21800000,United Kingdom
+21800000,nan
+21800000,nan
+21700000,nan
+21700000,United Arab Emirates
+21600000,Brazil
+21600000,India
+21600000,United States
+21500000,United States
+21500000,Mexico
+21500000,nan
+21500000,Chile
+21400000,Germany
+21400000,India
+21300000,United States
+21300000,United States
+21300000,India
+21300000,United States
+21300000,India
+21300000,India
+21200000,nan
+21200000,Philippines
+21100000,United States
+21100000,Indonesia
+21000000,United States
+21000000,Brazil
+21000000,United States
+21000000,United States
+20900000,India
+20900000,Brazil
+20900000,United States
+20900000,United States
+20900000,nan
+20900000,United States
+20800000,Brazil
+20800000,Germany
+20700000,United States
+20700000,United States
+20700000,nan
+20700000,Russia
+20700000,United States
+20600000,Indonesia
+20600000,Argentina
+20600000,Sweden
+20500000,South Korea
+20500000,Australia
+20500000,United States
+20400000,Brazil
+20400000,United States
+20400000,Afghanistan
+20400000,India
+20400000,Ukraine
+20400000,India
+20300000,United Kingdom
+20300000,nan
+20300000,Indonesia
+20200000,Colombia
+20200000,United Arab Emirates
+20200000,nan
+20200000,India
+20200000,Latvia
+20200000,United States
+20200000,Indonesia
+20100000,United States
+20100000,United States
+20100000,Brazil
+20100000,nan
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20000000,United States
+20000000,United States
+20000000,United Kingdom
+20000000,Canada
+20000000,India
+19900000,Brazil
+19800000,Germany
+19800000,United States
+19800000,United States
+19700000,United States
+19700000,nan
+19700000,United States
+19700000,United Kingdom
+19700000,United Kingdom
+19600000,United States
+19600000,United States
+19600000,Turkey
+19600000,United States
+19600000,United States
+19500000,India
+19400000,India
+19400000,Mexico
+19400000,India
+19400000,Switzerland
+19300000,India
+19300000,nan
+19300000,nan
+19200000,United States
+19200000,India
+19100000,United States
+19100000,United States
+19100000,nan
+19100000,nan
+19000000,United States
+19000000,Mexico
+19000000,India
+19000000,Brazil
+19000000,United Kingdom
+19000000,South Korea
+18900000,Russia
+18900000,nan
+18900000,Mexico
+18800000,United States
+18800000,United Kingdom
+18800000,nan
+18800000,nan
+18800000,United States
+18800000,Ukraine
+18800000,India
+18700000,Spain
+18700000,nan
+18600000,India
+18600000,United States
+18600000,Thailand
+18600000,Saudi Arabia
+18500000,Brazil
+18500000,Russia
+18500000,nan
+18500000,Russia
+18500000,Indonesia
+18400000,United States
+18400000,Spain
+18400000,Thailand
+18400000,nan
+18400000,United States
+18300000,Indonesia
+18300000,United States
+18300000,United States
+18300000,nan
+18200000,nan
+18200000,Brazil
+18100000,United States
+18100000,Indonesia
+18100000,France
+18100000,United States
+18100000,South Korea
+18100000,nan
+18000000,Brazil
+18000000,Australia
+18000000,United States
+18000000,United States
+18000000,United States
+18000000,Spain
+18000000,nan
+17900000,United States
+17900000,United States
+17900000,Argentina
+17900000,United States
+17900000,United States
+17900000,Vietnam
+17900000,United States
+17900000,United States
+17900000,nan
+17800000,India
+17800000,United States
+17700000,South Korea
+17700000,South Korea
+17700000,United States
+17700000,India
+17700000,Indonesia
+17700000,nan
+17700000,Brazil
+17700000,Ukraine
+17700000,Malaysia
+17700000,Argentina
+17600000,Thailand
+17600000,Mexico
+17600000,China
+17600000,Australia
+17600000,Chile
+17600000,South Korea
+17500000,India
+17500000,India
+17500000,India
+17500000,United States
+17400000,United States
+17400000,Thailand
+17400000,Iraq
+17400000,nan
+17300000,United States
+17300000,India
+17300000,India
+17300000,Australia
+17200000,nan
+17200000,United States
+17200000,Brazil
+17200000,Australia
+17200000,Argentina
+17200000,Spain
+17100000,Russia
+17100000,Indonesia
+17100000,United States
+17000000,United Kingdom
+17000000,India
+17000000,nan
+17000000,United States
+16900000,India
+16900000,United States
+16900000,United States
+16900000,United States
+16900000,India
+16900000,United States
+16900000,Brazil
+16800000,nan
+16800000,nan
+16800000,nan
+16800000,Indonesia
+16800000,Brazil
+16700000,nan
+16700000,United States
+16700000,United States
+16700000,United States
+16700000,Mexico
+16600000,Philippines
+16600000,Mexico
+16600000,Spain
+16600000,India
+16600000,India
+16600000,India
+16600000,Germany
+16600000,United States
+16500000,United States
+16500000,United States
+16500000,India
+16500000,United States
+16400000,United States
+16400000,Thailand
+16400000,United States
+16400000,Thailand
+16400000,nan
+16400000,nan
+16400000,Thailand
+16300000,United States
+16300000,United States
+16300000,United States
+16300000,United Kingdom
+16300000,United Kingdom
+16300000,United States
+16300000,India
+16300000,United States
+16300000,United Kingdom
+16200000,United States
+16200000,United States
+16200000,Brazil
+16200000,United Kingdom
+16200000,Vietnam
+16200000,Thailand
+16200000,Singapore
+16200000,United States
+16200000,Spain
+16200000,nan
+16100000,Indonesia
+16100000,nan
+16100000,United States
+16100000,Brazil
+16100000,nan
+16100000,United States
+16100000,France
+16100000,Sweden
+16100000,United States
+16100000,Mexico
+16000000,nan
+16000000,India
+16000000,Mexico
+16000000,nan
+16000000,Mexico
+15900000,Russia
+15900000,United States
+15900000,United States
+15900000,Argentina
+15900000,Brazil
+15900000,United States
+15900000,Colombia
+15800000,India
+15800000,India
+15800000,Indonesia
+15800000,United States
+15700000,India
+15700000,India
+15700000,Singapore
+15700000,India
+15700000,India
+15700000,United States
+15600000,Mexico
+15600000,nan
+15600000,Canada
+15600000,Brazil
+15600000,United States
+15500000,Mexico
+15500000,nan
+15500000,Saudi Arabia
+15500000,India
+15500000,Saudi Arabia
+15500000,Brazil
+15500000,United States
+15500000,India
+15500000,United States
+15500000,Egypt
+15400000,India
+15400000,United Arab Emirates
+15400000,United States
+15400000,United States
+15400000,United Kingdom
+15400000,Thailand
+15400000,United States
+15400000,Indonesia
+15300000,Spain
+15300000,United States
+15300000,India
+15300000,Russia
+15300000,India
+15200000,India
+15200000,India
+15200000,Philippines
+15200000,India
+15200000,India
+15200000,India
+15200000,Turkey
+15200000,United States
+15200000,India
+15100000,United States
+15100000,nan
+15100000,Indonesia
+15100000,Andorra
+15100000,Philippines
+15100000,United States
+15100000,United States
+15100000,Spain
+15100000,nan
+15100000,Egypt
+15100000,Russia
+15100000,South Korea
+15100000,Argentina
+15100000,Philippines
+15100000,Russia
+15100000,United Kingdom
+15000000,United Kingdom
+15000000,India
+15000000,Brazil
+15000000,United States
+15000000,United States
+15000000,Mexico
+15000000,United States
+15000000,United States
+15000000,India
+15000000,India
+15000000,India
+15000000,nan
+15000000,United States
+15000000,Indonesia
+15000000,Japan
+15000000,Brazil
+15000000,India
+14900000,United States
+14900000,Indonesia
+14900000,United States
+14900000,United States
+14900000,Spain
+14900000,Thailand
+14900000,nan
+14900000,Russia
+14900000,Brazil
+14900000,Japan
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,Australia
+14800000,Ukraine
+14800000,United States
+14800000,Brazil
+14800000,nan
+14800000,Germany
+14800000,United States
+14800000,United States
+14700000,Saudi Arabia
+14700000,United States
+14700000,Spain
+14700000,United States
+14700000,India
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,India
+14700000,United States
+14700000,Brazil
+14600000,Ecuador
+14600000,Spain
+14600000,United States
+14600000,Brazil
+14600000,United States
+14600000,United States
+14600000,Brazil
+14600000,United States
+14600000,Mexico
+14600000,India
+14500000,Brazil
+14500000,United States
+14500000,United States
+14500000,India
+14500000,Brazil
+14500000,United States
+14500000,United Kingdom
+14500000,United States
+14500000,South Korea
+14500000,India
+14500000,United States
+14500000,Thailand
+14500000,India
+14500000,United States
+14500000,Morocco
+14500000,nan
+14500000,Canada
+14400000,South Korea
+14400000,India
+14400000,Peru
+14400000,nan
+14400000,Saudi Arabia
+14400000,France
+14400000,United States
+14400000,United States
+14400000,India
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,India
+14400000,nan
+14400000,United States
+14400000,India
+14300000,United States
+14300000,United States
+14200000,Philippines
+14200000,Brazil
+14200000,Ukraine
+14200000,Netherlands
+14200000,United Kingdom
+14200000,Mexico
+14200000,India
+14200000,nan
+14200000,nan
+14200000,India
+14200000,India
+14200000,United States
+14100000,India
+14100000,nan
+14100000,nan
+14100000,Australia
+14100000,United Arab Emirates
+14100000,Indonesia
+14100000,United States
+14100000,United States
+14100000,United Kingdom
+14100000,Thailand
+14000000,Brazil
+14000000,Sweden
+14000000,Mexico
+14000000,Russia
+14000000,Spain
+14000000,Mexico
+14000000,United States
+14000000,India
+14000000,India
+14000000,Brazil
+13900000,Brazil
+13900000,Jordan
+13900000,United States
+13900000,nan
+13900000,India
+13900000,United States
+13900000,Bangladesh
+13900000,United States
+13900000,United States
+13900000,United States
+13900000,nan
+13800000,United States
+13800000,Canada
+13800000,nan
+13800000,Netherlands
+13800000,Mexico
+13800000,Pakistan
+13800000,India
+13800000,India
+13700000,Brazil
+13700000,India
+13700000,Brazil
+13700000,India
+13700000,India
+13700000,India
+13700000,Vietnam
+13700000,Brazil
+13700000,India
+13700000,nan
+13600000,Spain
+13600000,Philippines
+13600000,United States
+13600000,United States
+13600000,India
+13600000,United Kingdom
+13600000,United States
+13500000,Indonesia
+13500000,Canada
+13500000,India
+13500000,United Kingdom
+13500000,United Kingdom
+13500000,Ukraine
+13500000,India
+13500000,United Kingdom
+13500000,India
+13500000,United States
+13500000,United States
+13400000,United States
+13400000,Colombia
+13400000,India
+13400000,India
+13400000,India
+13400000,United States
+13400000,Thailand
+13400000,United States
+13400000,Philippines
+13400000,United States
+13400000,United States
+13300000,India
+13300000,United States
+13300000,United States
+13300000,nan
+13300000,United States
+13300000,United States
+13300000,Russia
+13300000,United States
+13300000,Ukraine
+13300000,United States
+13300000,United States
+13300000,India
+13300000,Saudi Arabia
+13300000,Canada
+13200000,United States
+13200000,Russia
+13200000,Finland
+13200000,nan
+13200000,India
+13200000,Indonesia
+13200000,Brazil
+13200000,United States
+13200000,Colombia
+13200000,United States
+13200000,India
+13200000,India
+13100000,United States
+13100000,Philippines
+13100000,United States
+13100000,nan
+13100000,India
+13100000,nan
+13100000,Brazil
+13100000,Brazil
+13100000,United States
+13100000,Brazil
+13100000,Ecuador
+13100000,Brazil
+13100000,United States
+13100000,Samoa
+13000000,Italy
+13000000,Brazil
+13000000,Indonesia
+13000000,France
+13000000,India
+13000000,South Korea
+13000000,United States
+13000000,Pakistan
+13000000,Mexico
+13000000,Brazil
+13000000,United States
+12900000,Brazil
+12900000,Brazil
+12900000,Spain
+12900000,South Korea
+12900000,United States
+12900000,United States
+12900000,United Arab Emirates
+12900000,nan
+12900000,United States
+12900000,Ukraine
+12900000,Indonesia
+12800000,United Kingdom
+12800000,Iraq
+12800000,Spain
+12800000,nan
+12800000,Canada
+12800000,United States
+12800000,India
+12800000,United States
+12700000,India
+12700000,nan
+12700000,Mexico
+12700000,Spain
+12700000,United States
+12700000,nan
+12700000,United States
+12700000,United States
+12700000,United States
+12700000,nan
+12700000,Brazil
+12700000,United States
+12700000,Colombia
+12600000,United Kingdom
+12600000,United States
+12600000,South Korea
+12600000,United States
+12600000,United Kingdom
+12500000,United Kingdom
+12500000,United States
+12500000,United States
+12500000,nan
+12500000,India
+12500000,Mexico
+12500000,Spain
+12500000,United States
+12500000,Mexico
+12500000,United States
+12500000,nan
+12500000,Brazil
+12500000,India
+12500000,Mexico
+12500000,India
+12500000,India
+12500000,India
+12500000,Brazil
+12500000,India
+12500000,nan
+12500000,India
+12500000,Pakistan
+12400000,United States
+12400000,India
+12400000,nan
+12400000,United States
+12400000,Mexico
+12400000,Brazil
+12400000,Indonesia
+12400000,Spain
+12400000,Canada
+12400000,Spain
+12400000,India
+12400000,India
+12400000,United Kingdom
+12400000,United States
+12400000,India
+12400000,nan
+12400000,nan
+12400000,United States
+12400000,United States
+12400000,United States
+12300000,Brazil
+12300000,India
+12300000,United Kingdom
+12300000,Sweden
+12300000,India
+bash-4.4$ cut -d',' -f3,8 youtubeStats.csv | grep "United States"
+170000000,United States
+166000000,United States
+162000000,United States
+112000000,United States
+98900000,United States
+96000000,United States
+75000000,United States
+68200000,United States
+59500000,United States
+59500000,United States
+56900000,United States
+56400000,United States
+52900000,United States
+52700000,United States
+52200000,United States
+47900000,United States
+46600000,United States
+44200000,United States
+42400000,United States
+42400000,United States
+40900000,United States
+39200000,United States
+38600000,United States
+38200000,United States
+38200000,United States
+38000000,United States
+37900000,United States
+37600000,United States
+36700000,United States
+36600000,United States
+36300000,United States
+35200000,United States
+35200000,United States
+34900000,United States
+33700000,United States
+33600000,United States
+32800000,United States
+32700000,United States
+31700000,United States
+31700000,United States
+31600000,United States
+31600000,United States
+31200000,United States
+30700000,United States
+30700000,United States
+30400000,United States
+30400000,United States
+30300000,United States
+30200000,United States
+30100000,United States
+29600000,United States
+29200000,United States
+28400000,United States
+28200000,United States
+27500000,United States
+27500000,United States
+27400000,United States
+27300000,United States
+27000000,United States
+26700000,United States
+26700000,United States
+26500000,United States
+26400000,United States
+26200000,United States
+26100000,United States
+26000000,United States
+25700000,United States
+25700000,United States
+25600000,United States
+25500000,United States
+25400000,United States
+25200000,United States
+25100000,United States
+24800000,United States
+24700000,United States
+24600000,United States
+24600000,United States
+24400000,United States
+24100000,United States
+24100000,United States
+24100000,United States
+24000000,United States
+23900000,United States
+23900000,United States
+23900000,United States
+23800000,United States
+23800000,United States
+23700000,United States
+23700000,United States
+23600000,United States
+23600000,United States
+23300000,United States
+23200000,United States
+23200000,United States
+23100000,United States
+23100000,United States
+22900000,United States
+22700000,United States
+22600000,United States
+22600000,United States
+22600000,United States
+22500000,United States
+22500000,United States
+22300000,United States
+22200000,United States
+22000000,United States
+22000000,United States
+21900000,United States
+21900000,United States
+21900000,United States
+21800000,United States
+21800000,United States
+21600000,United States
+21500000,United States
+21300000,United States
+21300000,United States
+21300000,United States
+21100000,United States
+21000000,United States
+21000000,United States
+21000000,United States
+20900000,United States
+20900000,United States
+20900000,United States
+20700000,United States
+20700000,United States
+20700000,United States
+20500000,United States
+20400000,United States
+20200000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20000000,United States
+20000000,United States
+19800000,United States
+19800000,United States
+19700000,United States
+19700000,United States
+19600000,United States
+19600000,United States
+19600000,United States
+19600000,United States
+19200000,United States
+19100000,United States
+19100000,United States
+19000000,United States
+18800000,United States
+18800000,United States
+18600000,United States
+18400000,United States
+18400000,United States
+18300000,United States
+18300000,United States
+18100000,United States
+18100000,United States
+18000000,United States
+18000000,United States
+18000000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17800000,United States
+17700000,United States
+17500000,United States
+17400000,United States
+17300000,United States
+17200000,United States
+17100000,United States
+17000000,United States
+16900000,United States
+16900000,United States
+16900000,United States
+16900000,United States
+16700000,United States
+16700000,United States
+16700000,United States
+16600000,United States
+16500000,United States
+16500000,United States
+16500000,United States
+16400000,United States
+16400000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16200000,United States
+16200000,United States
+16200000,United States
+16100000,United States
+16100000,United States
+16100000,United States
+15900000,United States
+15900000,United States
+15900000,United States
+15800000,United States
+15700000,United States
+15600000,United States
+15500000,United States
+15500000,United States
+15400000,United States
+15400000,United States
+15400000,United States
+15300000,United States
+15200000,United States
+15100000,United States
+15100000,United States
+15100000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+14900000,United States
+14900000,United States
+14900000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14600000,United States
+14600000,United States
+14600000,United States
+14600000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14300000,United States
+14300000,United States
+14200000,United States
+14100000,United States
+14100000,United States
+14000000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13800000,United States
+13600000,United States
+13600000,United States
+13600000,United States
+13500000,United States
+13500000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13200000,United States
+13200000,United States
+13200000,United States
+13100000,United States
+13100000,United States
+13100000,United States
+13100000,United States
+13000000,United States
+13000000,United States
+12900000,United States
+12900000,United States
+12900000,United States
+12800000,United States
+12800000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12600000,United States
+12600000,United States
+12500000,United States
+12500000,United States
+12500000,United States
+12500000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+bash-4.4$ cut -d',' -f3,8 youtubeStats.csv | grep "United States" >> Subscribers ited_States.txt
+bash-4.4$ cd Subscribers
+bash-4.4$ ls
+United_States.txt
+bash-4.4$ cat United_States.txt
+170000000,United States
+166000000,United States
+162000000,United States
+112000000,United States
+98900000,United States
+96000000,United States
+75000000,United States
+68200000,United States
+59500000,United States
+59500000,United States
+56900000,United States
+56400000,United States
+52900000,United States
+52700000,United States
+52200000,United States
+47900000,United States
+46600000,United States
+44200000,United States
+42400000,United States
+42400000,United States
+40900000,United States
+39200000,United States
+38600000,United States
+38200000,United States
+38200000,United States
+38000000,United States
+37900000,United States
+37600000,United States
+36700000,United States
+36600000,United States
+36300000,United States
+35200000,United States
+35200000,United States
+34900000,United States
+33700000,United States
+33600000,United States
+32800000,United States
+32700000,United States
+31700000,United States
+31700000,United States
+31600000,United States
+31600000,United States
+31200000,United States
+30700000,United States
+30700000,United States
+30400000,United States
+30400000,United States
+30300000,United States
+30200000,United States
+30100000,United States
+29600000,United States
+29200000,United States
+28400000,United States
+28200000,United States
+27500000,United States
+27500000,United States
+27400000,United States
+27300000,United States
+27000000,United States
+26700000,United States
+26700000,United States
+26500000,United States
+26400000,United States
+26200000,United States
+26100000,United States
+26000000,United States
+25700000,United States
+25700000,United States
+25600000,United States
+25500000,United States
+25400000,United States
+25200000,United States
+25100000,United States
+24800000,United States
+24700000,United States
+24600000,United States
+24600000,United States
+24400000,United States
+24100000,United States
+24100000,United States
+24100000,United States
+24000000,United States
+23900000,United States
+23900000,United States
+23900000,United States
+23800000,United States
+23800000,United States
+23700000,United States
+23700000,United States
+23600000,United States
+23600000,United States
+23300000,United States
+23200000,United States
+23200000,United States
+23100000,United States
+23100000,United States
+22900000,United States
+22700000,United States
+22600000,United States
+22600000,United States
+22600000,United States
+22500000,United States
+22500000,United States
+22300000,United States
+22200000,United States
+22000000,United States
+22000000,United States
+21900000,United States
+21900000,United States
+21900000,United States
+21800000,United States
+21800000,United States
+21600000,United States
+21500000,United States
+21300000,United States
+21300000,United States
+21300000,United States
+21100000,United States
+21000000,United States
+21000000,United States
+21000000,United States
+20900000,United States
+20900000,United States
+20900000,United States
+20700000,United States
+20700000,United States
+20700000,United States
+20500000,United States
+20400000,United States
+20200000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20100000,United States
+20000000,United States
+20000000,United States
+19800000,United States
+19800000,United States
+19700000,United States
+19700000,United States
+19600000,United States
+19600000,United States
+19600000,United States
+19600000,United States
+19200000,United States
+19100000,United States
+19100000,United States
+19000000,United States
+18800000,United States
+18800000,United States
+18600000,United States
+18400000,United States
+18400000,United States
+18300000,United States
+18300000,United States
+18100000,United States
+18100000,United States
+18000000,United States
+18000000,United States
+18000000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17900000,United States
+17800000,United States
+17700000,United States
+17500000,United States
+17400000,United States
+17300000,United States
+17200000,United States
+17100000,United States
+17000000,United States
+16900000,United States
+16900000,United States
+16900000,United States
+16900000,United States
+16700000,United States
+16700000,United States
+16700000,United States
+16600000,United States
+16500000,United States
+16500000,United States
+16500000,United States
+16400000,United States
+16400000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16300000,United States
+16200000,United States
+16200000,United States
+16200000,United States
+16100000,United States
+16100000,United States
+16100000,United States
+15900000,United States
+15900000,United States
+15900000,United States
+15800000,United States
+15700000,United States
+15600000,United States
+15500000,United States
+15500000,United States
+15400000,United States
+15400000,United States
+15400000,United States
+15300000,United States
+15200000,United States
+15100000,United States
+15100000,United States
+15100000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+15000000,United States
+14900000,United States
+14900000,United States
+14900000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14800000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14700000,United States
+14600000,United States
+14600000,United States
+14600000,United States
+14600000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14500000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14400000,United States
+14300000,United States
+14300000,United States
+14200000,United States
+14100000,United States
+14100000,United States
+14000000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13900000,United States
+13800000,United States
+13600000,United States
+13600000,United States
+13600000,United States
+13500000,United States
+13500000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13400000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13300000,United States
+13200000,United States
+13200000,United States
+13200000,United States
+13100000,United States
+13100000,United States
+13100000,United States
+13100000,United States
+13000000,United States
+13000000,United States
+12900000,United States
+12900000,United States
+12900000,United States
+12800000,United States
+12800000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12700000,United States
+12600000,United States
+12600000,United States
+12500000,United States
+12500000,United States
+12500000,United States
+12500000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+12400000,United States
+bash-4.4$ cd ..
+bash-4.4$ pwd
+/mnt/scratch/FA23_CS131_Ashish/farihasp24/cs131/Worksheet4
+bash-4.4$ pwdd ..at United_States.txt[C[C[C[CsSubscribers[C[C[C[C[Cut -d',' -f3,8 youtubeStats.csv | grep "United States" >> Subscribers/ited_States.txtA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" >> Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C.txtP.txtP.txtP.txt.txtP.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctxt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CP.txtP.txtI.txtn.txtd.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci.txtA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CUnited States" | grcut -d',' -f 1
+170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+26000000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+19000000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16700000
+16600000
+16500000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000
+bash-4.4$ cut -d',' -f3,8 youtubeStats.csv | grep "United States" | cut -d',' -f1> Sub Subscribers/UnitedS_States.txt
+bash-4.4$ cd USubat Subscribers/United_States.txt
+170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+26000000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+19000000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16700000
+16600000
+16500000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000
+bash-4.4$ pwd
+/mnt/scratch/FA23_CS131_Ashish/farihasp24/cs131/Worksheet4
+bash-4.4$ pwdat Subscribers/United_States.txt[C[C[C[C[Cut -d',' -f3,8 youtubeStats.csv | grep "United States" | cut -d',' -f1 Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctxttxttxt[1Pxttxt[1Pxttxttxttxttxt[1Pxttxttxttxttxttxttxttxttxttxttxttxt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CI" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca" | cut -d',' -f1 > Subscribers/India.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C
+bash-4.4$ cat Subscribers/India/tx,.txt
+245000000
+159000000
+96700000
+83000000
+70500000
+65900000
+65600000
+64600000
+61000000
+59300000
+58000000
+57600000
+57200000
+54600000
+53300000
+47400000
+45500000
+42500000
+41400000
+39200000
+38300000
+38200000
+37200000
+37000000
+36600000
+35500000
+35500000
+35400000
+34300000
+34000000
+33500000
+33500000
+33400000
+32700000
+32000000
+31700000
+31700000
+30700000
+30500000
+29800000
+28900000
+28400000
+28300000
+28200000
+27300000
+27100000
+26400000
+26300000
+25200000
+24300000
+23400000
+23100000
+23100000
+23000000
+23000000
+22900000
+22600000
+22600000
+22500000
+21600000
+21400000
+21300000
+21300000
+21300000
+20900000
+20400000
+20400000
+20200000
+20000000
+19500000
+19400000
+19400000
+19300000
+19200000
+19000000
+18800000
+18600000
+17800000
+17700000
+17500000
+17500000
+17500000
+17300000
+17300000
+17000000
+16900000
+16900000
+16600000
+16600000
+16600000
+16500000
+16300000
+16000000
+15800000
+15800000
+15700000
+15700000
+15700000
+15700000
+15500000
+15500000
+15400000
+15300000
+15300000
+15200000
+15200000
+15200000
+15200000
+15200000
+15200000
+15000000
+15000000
+15000000
+15000000
+15000000
+14700000
+14700000
+14600000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14200000
+14200000
+14200000
+14100000
+14000000
+14000000
+13900000
+13800000
+13800000
+13700000
+13700000
+13700000
+13700000
+13700000
+13600000
+13500000
+13500000
+13500000
+13400000
+13400000
+13400000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13000000
+12800000
+12700000
+12500000
+12500000
+12500000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12300000
+12300000
+bash-4.4$ cd Subscribers
+bash-4.4$ cd ..
+bash-4.4$ awk '{ total += $!1; countakk '{ total += $1; count++ } END { print totatal/al/count }' Subscribers/U ed.txt_States.txt | bc
+2.34169e+07
+bash-4.4$ awk '{ total += $1; count++ } END { print total/count }' Subscribers/Uned_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+7329500000
+bash-4.4$ awk '{ total += $1; count++ } END { print total }' Subscribers/United_Stes.txtA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+313
+bash-4.4$ lswc -l Subscribers/United_States.txt
+313 Subscribers/United_States.txt
+bash-4.4$ wc -l Subscribers/United_States.txt[C[C[C[Cwk '{ total += $1; count++ } END { print count }' Subscribers/United_Stes.txtA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Count }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccount }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccount }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccount }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccount }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccount }' Subscribers/United_States.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+2.34169e+07
+bash-4.4$ awk '{ total += $1; count++ } END { print total/count }' Subscribers/Uned_States.txt | bc
+(standard_in) 1: syntax error
+bash-4.4$ paste -s -d '+' Subscribers/United_STtates.txt
+170000000+166000000+162000000+112000000+98900000+96000000+75000000+68200000+59500000+59500000+56900000+56400000+52900000+52700000+52200000+47900000+46600000+44200000+42400000+42400000+40900000+39200000+38600000+38200000+38200000+38000000+37900000+37600000+36700000+36600000+36300000+35200000+35200000+34900000+33700000+33600000+32800000+32700000+31700000+31700000+31600000+31600000+31200000+30700000+30700000+30400000+30400000+30300000+30200000+30100000+29600000+29200000+28400000+28200000+27500000+27500000+27400000+27300000+27000000+26700000+26700000+26500000+26400000+26200000+26100000+26000000+25700000+25700000+25600000+25500000+25400000+25200000+25100000+24800000+24700000+24600000+24600000+24400000+24100000+24100000+24100000+24000000+23900000+23900000+23900000+23800000+23800000+23700000+23700000+23600000+23600000+23300000+23200000+23200000+23100000+23100000+22900000+22700000+22600000+22600000+22600000+22500000+22500000+22300000+22200000+22000000+22000000+21900000+21900000+21900000+21800000+21800000+21600000+21500000+21300000+21300000+21300000+21100000+21000000+21000000+21000000+20900000+20900000+20900000+20700000+20700000+20700000+20500000+20400000+20200000+20100000+20100000+20100000+20100000+20100000+20100000+20100000+20000000+20000000+19800000+19800000+19700000+19700000+19600000+19600000+19600000+19600000+19200000+19100000+19100000+19000000+18800000+18800000+18600000+18400000+18400000+18300000+18300000+18100000+18100000+18000000+18000000+18000000+17900000+17900000+17900000+17900000+17900000+17900000+17800000+17700000+17500000+17400000+17300000+17200000+17100000+17000000+16900000+16900000+16900000+16900000+16700000+16700000+16700000+16600000+16500000+16500000+16500000+16400000+16400000+16300000+16300000+16300000+16300000+16300000+16200000+16200000+16200000+16100000+16100000+16100000+15900000+15900000+15900000+15800000+15700000+15600000+15500000+15500000+15400000+15400000+15400000+15300000+15200000+15100000+15100000+15100000+15000000+15000000+15000000+15000000+15000000+14900000+14900000+14900000+14800000+14800000+14800000+14800000+14800000+14800000+14700000+14700000+14700000+14700000+14700000+14700000+14600000+14600000+14600000+14600000+14500000+14500000+14500000+14500000+14500000+14500000+14400000+14400000+14400000+14400000+14400000+14400000+14300000+14300000+14200000+14100000+14100000+14000000+13900000+13900000+13900000+13900000+13900000+13800000+13600000+13600000+13600000+13500000+13500000+13400000+13400000+13400000+13400000+13400000+13300000+13300000+13300000+13300000+13300000+13300000+13300000+13200000+13200000+13200000+13100000+13100000+13100000+13100000+13000000+13000000+12900000+12900000+12900000+12800000+12800000+12700000+12700000+12700000+12700000+12700000+12600000+12600000+12500000+12500000+12500000+12500000+12400000+12400000+12400000+12400000+12400000+12400000
+bash-4.4$ paste -s -d '+' Subscribers/United_States.txt [C[C[C[C[Kt Subscribers/Unoiteited_States.txt
+170000000
+166000000
+162000000
+112000000
+98900000
+96000000
+75000000
+68200000
+59500000
+59500000
+56900000
+56400000
+52900000
+52700000
+52200000
+47900000
+46600000
+44200000
+42400000
+42400000
+40900000
+39200000
+38600000
+38200000
+38200000
+38000000
+37900000
+37600000
+36700000
+36600000
+36300000
+35200000
+35200000
+34900000
+33700000
+33600000
+32800000
+32700000
+31700000
+31700000
+31600000
+31600000
+31200000
+30700000
+30700000
+30400000
+30400000
+30300000
+30200000
+30100000
+29600000
+29200000
+28400000
+28200000
+27500000
+27500000
+27400000
+27300000
+27000000
+26700000
+26700000
+26500000
+26400000
+26200000
+26100000
+26000000
+25700000
+25700000
+25600000
+25500000
+25400000
+25200000
+25100000
+24800000
+24700000
+24600000
+24600000
+24400000
+24100000
+24100000
+24100000
+24000000
+23900000
+23900000
+23900000
+23800000
+23800000
+23700000
+23700000
+23600000
+23600000
+23300000
+23200000
+23200000
+23100000
+23100000
+22900000
+22700000
+22600000
+22600000
+22600000
+22500000
+22500000
+22300000
+22200000
+22000000
+22000000
+21900000
+21900000
+21900000
+21800000
+21800000
+21600000
+21500000
+21300000
+21300000
+21300000
+21100000
+21000000
+21000000
+21000000
+20900000
+20900000
+20900000
+20700000
+20700000
+20700000
+20500000
+20400000
+20200000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20100000
+20000000
+20000000
+19800000
+19800000
+19700000
+19700000
+19600000
+19600000
+19600000
+19600000
+19200000
+19100000
+19100000
+19000000
+18800000
+18800000
+18600000
+18400000
+18400000
+18300000
+18300000
+18100000
+18100000
+18000000
+18000000
+18000000
+17900000
+17900000
+17900000
+17900000
+17900000
+17900000
+17800000
+17700000
+17500000
+17400000
+17300000
+17200000
+17100000
+17000000
+16900000
+16900000
+16900000
+16900000
+16700000
+16700000
+16700000
+16600000
+16500000
+16500000
+16500000
+16400000
+16400000
+16300000
+16300000
+16300000
+16300000
+16300000
+16200000
+16200000
+16200000
+16100000
+16100000
+16100000
+15900000
+15900000
+15900000
+15800000
+15700000
+15600000
+15500000
+15500000
+15400000
+15400000
+15400000
+15300000
+15200000
+15100000
+15100000
+15100000
+15000000
+15000000
+15000000
+15000000
+15000000
+14900000
+14900000
+14900000
+14800000
+14800000
+14800000
+14800000
+14800000
+14800000
+14700000
+14700000
+14700000
+14700000
+14700000
+14700000
+14600000
+14600000
+14600000
+14600000
+14500000
+14500000
+14500000
+14500000
+14500000
+14500000
+14400000
+14400000
+14400000
+14400000
+14400000
+14400000
+14300000
+14300000
+14200000
+14100000
+14100000
+14000000
+13900000
+13900000
+13900000
+13900000
+13900000
+13800000
+13600000
+13600000
+13600000
+13500000
+13500000
+13400000
+13400000
+13400000
+13400000
+13400000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13300000
+13200000
+13200000
+13200000
+13100000
+13100000
+13100000
+13100000
+13000000
+13000000
+12900000
+12900000
+12900000
+12800000
+12800000
+12700000
+12700000
+12700000
+12700000
+12700000
+12600000
+12600000
+12500000
+12500000
+12500000
+12500000
+12400000
+12400000
+12400000
+12400000
+12400000
+12400000
+bash-4.4$ cat Subscribers/United_States.txt[C[C[C[Caste -s -d '+' Subscribers/United_States.txt | bc
+7329500000
+bash-4.4$ \ste -s -d '+' Subscribers/United_States.txt | bc | awk '{print $1/NR 
+7329500000
+bash-4.4$ sum =$(paste -s -d '+' Subscribers/United_States.txt | bc)
+bash-4.4$ count=$(wc -l < Subscribers/United_States.txt)
+bash-4.4$ echo $sum"$sum / $cpuount" | bc
+23416932
+bash-4.4$ secho #$sum"$sum
+7329500000
+bash-4.4$ echo $count
+313
+bash-4.4$ echo $countPsum"$sum / $count" | bc[C[C[C[Count=$(wc -l < Subscribers/United_States.txt)[C[C[C[Cum=$(paste -s -d '+' Subscribers/United_States.txt | bc)[C[C[C[Caste -s -d '+' Subscribers/United_States.txt | bc | awk '{print $1/NR}[A[C[C[C[CPsum=$(paste -s -d '+' Subscribers/United_States.txt | bc)
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pcount=$(wc -l < Subscribers/United_States.txt)[C[C[C[C[21Pecho "$sum / $count" | bc[C[C[C[C[C[C[C$sum$sum / $count" | bc >> ws4_means.txt
+bash-4.4$ cat
+was ws4.means.txt
+ws4_means.txt
+;
+;
+qC
+bash-4.4$ k
+Subscribers  ws4_means.txt  youtubeStats.csv
+bash-4.4$ cat wes4_means.txt
+23416932
+bash-4.4$ cat ws4_means.txt[C[C[C[Cscho "$sum / $count" | bc >> ws4_means.txt[C[C[C[C[C[C[C$countsum"$sum / $count" | bc[C[C[C[Count=$(wc -l < Subscribers/United_States.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)1P.txt)xt)xt)xt)xt)xt)
+bash-4.4$ echo $count
+168
+bash-4.4$ echo $countount=$(wc -l < Subscribers/India.txt)[C[C[C[C[CPat ws4_means.txt[C[C[C[Cscho "$sum / $count" | bc >> ws4_means.txt[C[C[C[C[C[C[C$countsum"$sum / $count" | bc[C[C[C[Count=$(wc -l < Subscribers/United_States.txt)[C[C[C[Cum=$(paste -s -d '+' Subscribers/United_States.txt | bc)[1PPPPPPPPPPPPPIndia
+bash-4.4$ echo $sum
+4310600000
+bash-4.4$ echo "$syn um /$count
+> " |b bc
+25658333
+bash-4.4$ echo "$sum /$count
+ bc[C[C[K
+[C[C[C[C[Cecho "$sum / $count" | bc
+25658333
+bash-4.4$ echo "$sum / $count" | bc >> ws_44_means.txt
+bash-4.4$ ls
+Subscribers  ws4_means.txt  youtubeStats.csv
+bash-4.4$ cat ws4_means.txt
+23416932
+25658333
+bash-4.4$ exit
+
+Script done on 2024-04-09 15:19:57-04:00
