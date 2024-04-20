@@ -1,0 +1,159 @@
+1. last.fake
+
+a) The number of lines in last.fake before filtering
+
+Command: wc -l last.fake
+Output:507 last.fake
+
+b) The command used to make the file such that only lines that have "sp24" are in the "lastsp24.fake" file
+
+Command: awk '/sp24/ { print >> "lastsp24.fake" }' last.fake
+
+c) The number of lines in last.fake after filtering everything that doesn't have "sp24"
+
+Command: awk '!/sp24/' | wc -l
+Output: 29
+-------------------------------------------------------------------------------
+2. Find all the distinct users that logged in on a Sunday from the lastsp24.fake file
+
+Command: grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }'
+Output:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+-------------------------------------------------------------------------------
+3. Find all the distinct users that logged in between 11PM - 4AM from the lastsp24.fake file
+
+Command: awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+Output:
+Night Owls List: 
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+ayesp24
+benjaminsp24
+bennysp24
+billysp24
+brandonsp24
+breannasp24
+briansp24
+chih-kuosp24
+connersp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+ericsp24
+farihasp24
+fnusp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jessesp24
+jimmysp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+michellesp24
+nicholsonsp24
+nicolesp24
+piercesp24
+rickysp24
+robertosp24
+robertsp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+swansp24
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night owls are dope. Please ensure you get enough sleep though.
+-------------------------------------------------------------------------------
+4. Find all the distinct users that logged in between 5AM - 9AM from the lastsp24.fake file
+
+Command: awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 5 &&  hour <= 9) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List: " } { print } END { print "Early birds are dope. Please ensure you get enough sleep though." }'
+Output:
+Early Birds List: 
+aayushsp24
+ajaysp24
+ericsp24
+gradysp24
+ronsp24
+Early birds are dope. Please ensure you get enough sleep though.
+-------------------------------------------------------------------------------
+5. Display the users that have a username starting with "t"
+
+Command: awk '/^[tT]/ { print $1 }' lastsp24.fake | sort | uniq
+Output:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+-------------------------------------------------------------------------------
+6. Find all the users on the passwd.fake file that have usernames starting with 'a' and have UID divisible by 2
+
+Command: awk -F: '/^[aA]/ && $3%2==0  { print $1 }' passwd.fake
+Output:
+angie23fa 
+areebah23fa 
+apple23fa 
+ajay23fa
+alan23fa 
+amreenf23 
+acesp24 
+akashsp24 
+ayesp24
+alexsp24
+aayushsp24 
+ajaysp24 
+ashish 
+amansp24 
+-------------------------------------------------------------------------------
+7. Display all the distinct lines left in passwd.fake after deleting all letters, digits, and spaces
+
+Command: sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake | sort -u
+Output:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://

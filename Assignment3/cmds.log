@@ -1,0 +1,124 @@
+Assignment 3 cmds.log
+
+  725  mkdir Assignment3
+  726  cd Assignment3
+  727  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/last.fake
+  728  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/passwd.fake
+  729  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/ps.fake
+  730  ls
+-------------------------------------------------------------------------------
+1. last.fake 
+  731  man last
+  732  ws -l last.fake
+  733  wc -l last.fake
+  734  wc -l last.fake >> Assignment3.txt
+  735  vim Assignment3.txt
+  736  grep "sp24" last.fake
+  737  awk '/sp24/ {print}' last.fake
+  738  awk '/sp24/ { >> lastsp24.fake }' last.fake
+  739  awk '/sp24/ { print >> lastsp24.fake }' last.fake
+  740  awk '/sp24/ { print >> "lastsp24.fake" }' last.fake
+  741  ls
+  742  cat lastsp24.fake
+  743  vim Assignment3.txt
+  744  ls
+  745  wc -l lastsp24.fake
+  746  grep -v 'sp24' last.fake | wc -l
+  747  awk '/sp24/!' last.fake
+  748  sed '/sp24/!' last.fake
+  749  sed '/sp24/' last.fake
+  750  awk '!/sp24/' last.fake
+  751  awk '!/sp24/' last.fake | wc -l
+  752  awk '!/sp24/' last.fake | wc -l >> Assignment3.txt
+  753  vim Assignment3.txt
+-------------------------------------------------------------------------------
+2. Find all the distinct users that logged in on a Sunday from the lastsp24.fake file
+  754  grep "Sun" lastsp24.fake
+  755  grep "Sun" lastsp24.fake | awk -F: '{ print $1 }'
+  756  grep "Sun" lastsp24.fake | awk '{ print $1 }'
+  757  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq
+  758  grep "Sun" lastsp24.fake | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print $1 } END { print "Kudos to these people for putting in the work" }' | sort | uniq
+  759  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Synday are:
+  760  " } END { print "Kudos to these people for putting in the work" }'
+  761  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Synday are:" } END { "Kudos to these people for putting in the work" }'
+  762  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq
+  763  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Synday are:
+  764  " } { print } END { print "Kudos to these people for putting in the work" }'
+  765  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }'
+  766  grep "Sun" lastsp24.fake | awk '{ print $1 }' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }' >> Assignment3.txt
+  767  vim Assigment3.txt
+  768  ls
+  769  vim Assignment3.txt
+-------------------------------------------------------------------------------
+3. Find all the distinct users that logged in between 11PM - 4AM from the lastsp24.fake file
+  770  cat lastsp24.fake
+  771  awk '{ print $6 }' lastsp24.fake
+  772  awk '{ print $7 }' lastsp24.fake
+  773  cat lastsp24.fake
+  774  awk -F '{print $7}' lastsp24.fake
+  775  awk '{ print $7 }' lastsp24.fake
+  776  awk -F '{ print $7 }' lastsp24.fake
+  777  cat lastsp24.fake
+  778  cd cs131
+  779  cd Assignment3
+  780  cat lastsp24.fake
+  781  vim Assignment3.txt
+  782  awk '{ print $4 }' latesp24.fake
+  783  ls
+  784  awk '{ print $4 }' lastsp24.fake
+  785  awk '{ print $7 }' lastsp24.fake
+  786  cat lastsp24.fake
+  787  grep "gone" lastsp24.fake
+  788  awk '{ print $7 }' lastsp24.fake | sort | uniq
+  789  awk '{ if ($7 >= 23:00) print $1 }' lastsp24.fake
+  790  awk '{ split($7, time, ":"); hour = time[0]; if (hour >= 23) print $1 }' lastsp24.fake
+  791  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23) print $1 }' lastsp24.fake
+  792  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake
+  793  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq
+  794  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk '{ BEGIN { print "Night Owls List: " } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+  795  vim Assignment3.txt
+  796  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk '{ BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+  797  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+-------------------------------------------------------------------------------
+4. Find all the distinct users that logged in between 5AM - 9AM from the lastsp24.fake file
+  798* awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 5 || hour <= 9) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List: " } { print } END { print "Early birds are dope. Please ensure you get enough sleep though." }' 
+  799  vim Assignment3.txt
+  800  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 && hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+  801  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }'
+  802  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 23 || hour <= 4) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List: " } { print } END { print "Night owls are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+  803  vim Assignment3.txt
+  804  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 5 &&  hour <= 9) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List: " } { print } END { print "Early birds[C are dope. Please ensure you get enough sleep though." }' 
+  805  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 5 &&  hour <= 9) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List: " } { print } END { print "Early birds are dope. Please ensure you get enough sleep though." }' 
+  806  awk '{ split($7, time, ":"); hour = time[1]; if (hour >= 5 &&  hour <= 9) print $1 }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List: " } { print } END { print "Early birds are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+  807  vim Assignment3.txt
+-------------------------------------------------------------------------------
+5. Display the users that have a username starting with "t"
+  808  awk '{ print $1 }' lastsp24.fake
+  809  awk '/^[tT]* { print $1 }' lastsp24.fake
+  810  awk '/^[tT]*/ { print $1 }' lastsp24.fake
+  811  awk '/^[tT]/ { print $1 }' lastsp24.fake
+  812  awk '/^[tT]/ { print $1 }' lastsp24.fake | sort | uniq
+  813  awk '/^[tT]/ { print $1 }' lastsp24.fake | sort | uniq >> Assignment3.txt
+  814  vim Assignment3.txt
+-------------------------------------------------------------------------------
+6. Find all the users on the passwd.fake file that have usernames starting with 'a' and have UID divisible by 2
+  815  awk '/^[aA]/ { print $1 }' lastsp24.fake | sort | uniq
+  816  cat lastsp24.fake
+  817  cat passwd.fake
+  818  awk -F: '{print $1, $3}' passwd.fake
+  819  awk -F: '/^[aA]/ && $3%2==0  {print $1, $3}' passwd.fake
+  820  awk -F: '/^[aA]/ {print $1, $3}' passwd.fake
+  821  awk -F: '/^[aA]/ && $3%2==0  {print $1, $3}' passwd.fake | wc -l
+  822  awk -F: '/^[aA]/ && $3%2==0  {print $1, $3}' passwd.fake >> Assignment3.txt
+  823  vim Assignment3.txt
+  824  ls
+  825  vim Assignment3.txt
+-------------------------------------------------------------------------------
+7. Display all the distinct lines left in passwd.fake after deleting all letters, digits, and spaces
+  826  sed 's/[a-zA-Z0-9 ]*// d' passwd.fake
+  827  sed '/[a-zA-Z0-9 ]*/ d' passwd.fake
+  828  sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake
+  829  sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake | sort -u
+  830  sed 's/[a-zA-Z0-9[:space:]]//g' passwd.fake | sort -u >> Assignment3.txt
+  831  vim Assignment3.txt
+  832  history > cmds.log
