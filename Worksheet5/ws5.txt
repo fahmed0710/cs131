@@ -1,0 +1,14 @@
+1. The number of entries for different directories
+
+wc -l UnitedStates/Music.txt:
+73 UnitedStates/Music.txt
+
+
+wc -l UnitedStates/Entertainment.txt:
+68 UnitedStates/Entertainment.txt
+
+wc -l UnitedStates/Gaming.txt:
+26 UnitedStates/Gaming.txt
+
+wc -l UnitedStates/Comedy.txt:
+22 UnitedStates/Comedy.txt

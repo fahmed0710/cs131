@@ -1,0 +1,182 @@
+Worksheet 5 cmds.log
+
+  855  cd cs131
+  856  ls
+  857  mkdir Worksheet5
+  858  cd Worksheet5
+  859  cd ../Assignment3
+  860  ls
+  861  cd ../Worksheet4
+  862  ls
+  863  mv youtubeStats.csv ../Worksheet5/
+  864  cd ../Worksheet5
+  865  ls
+  866  head -n 1 youtubeStats.csv
+  867  cut -d ',' -f 8 youtubeStats.csv
+  868  awk '{print $0}' youtubeStats.csv
+  869  awk '{print $1}' youtubeStats.csv
+  870  awk '{print $8}' youtubeStats.csv
+  871  awk -F, '{print $8}' youtubeStats.csv
+  872  head -n 6 youtubeStats.csv
+  873  head -n 10 youtubeStats.csv
+  874  awk -F, '{print $8}' youtubeStats.csv
+  875  awk -F, '{if ($8 == "United States") print $0 }' youtubeStats.csv
+  876  awk -F, '{if ($8 == "United States") print $8 }' youtubeStats.csv
+  877  vim script.sh
+  878  awk -f script.sh youtubeStats.csv
+  879  vim script.sh
+  880  awk -f script.sh youtubeStats.csv
+  881  vim script.sh
+  882  awk -f script.sh youtubeStats.csv
+  883  vim script.sh
+  884  awk -f script.sh youtubeStats.csv
+  885  vim script.sh
+  886  head -n 1 youtubeStats.csv
+  887  vim script.sh
+  888  head -n 1 youtubeStats.csv
+  889  awk -f script.sh youtubeStats.csv
+  890  awk -f script.sh youtubeStats.csv | wc -l
+  891  awk -f script.sh youtubeStats.csv | grep "United States" wc -l
+  892  awk -f script.sh youtubeStats.csv | grep "United States" |  wc -l
+  893  awk -f script.sh youtubeStats.csv | grep "United States" | wc -l
+  894  awk -f script.sh youtubeStats.csv | wc -l
+  895  awk -f script.sh youtubeStats.csv | grep "United States" 
+  896  awk -f script.sh youtubeStats.csv | grep "United States" | wc
+  897  awk -f script.sh youtubeStats.csv | wc
+  898  vim script.sh
+  899  awk -f script.sh youtubeStats.csv 
+  900  vim script.sh
+  901  awk -f script.sh youtubeStats.csv 
+  902  vim script.sh
+  903  awk -f script.sh youtubeStats.csv 
+  904  vim script.sh
+  905  awk -f script.sh youtubeStats.csv 
+  906  vim script.sh
+  907  ls
+  908  mv UnitedStates "United States"
+  909  ls
+  910  mv 'United States' UnitedStates
+  911  l
+  912  ls
+  913  mv UnitedStates 'United States'
+  914  ls
+  915  mv 'United States' UnitedStates
+  916  ls
+  917  vim script.sh
+  918  ./script.sh
+  919  chmod u+x script.sh
+  920  ls -l
+  921  ./script.sh
+  922  cat youtubeStats.csv
+  923  vim script.sh
+  924  awk '{print $5}' youtubeStats.csv
+  925  awk -F, '{print $5}' youtubeStats.csv
+  926  vim script.sh
+  927  cd cs131/Worksheet5
+  928  ls
+  929  vim script.sh
+  930  head -n 10 youtubeStats.csv
+  931  vim script.sh
+  932  ./script.sh
+  933  cut -d ',' -f 5 youtubeStats.csv
+  934  cut -d ',' -f 5 youtubeStats.csv | sort | uniq
+  935  vim script.sh
+  936  ./script.sh
+  937  vim script.sh
+  938  ./script.sh
+  939  vim script.sh
+  940  ./script.sh
+  941  vim script.sh
+  942  ./script.sh
+  943  vim script.sh
+  944  ./script.sh
+  945  vim script.sh
+  946  ./script.sh
+  947   cut -d ',' -f 5 youtubeStats.csv | sort | uniq
+  948  vim script.sh
+  949  ./script.sh
+  950  vim script.sh
+  951  ./script.sh
+  952  vim script.sh
+  953  ./script.sh
+  954  vim script.sh
+  955  ./script.sh
+  956  vim script.sh
+  957  ./script.sh
+  958  vim script.sh
+  959  ./script.sh
+  960  vim script.sh
+  961  ./script.sh
+  962  vim script.sh
+  963  ./script.sh
+  964  tail -n 1 youtubeStats.csv
+  965  vim script.sh
+  966  ./script.sh
+  967  vim script.sh
+  968  ./script.sh
+  969  vim script.sh
+  970  ./script.sh
+  971  vim script.sh
+  972  ./script.sh
+  973  vim script.sh
+  974  ./script.sh
+  975  vim script.sh
+  976  ./script.sh
+  977  vim script.sh
+  978  ./script.sh
+  979  vim script.sh
+  980  ./script.sh
+  981  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States"
+  982  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "&"
+  983  ./script.sh | grep "&"
+  984  ./script.sh >> test.txt
+  985  cat test.txt
+  986  cat test.txt | grep "&"
+  987  vim script.sh
+  988  ./script.sh
+  989  vim script.sh
+  990  ./script.sh
+  991  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "&"
+  992  vim script.sh
+  993  cut -d ',' -f 5 youtubeStats.csv | sort | uniq
+  994  vim script.sh
+  995  ./script.sh
+  996  vim script.sh
+  997  ./script.sh
+  998  vim script.sh
+  999  ./script.sh
+ 1000  vim script.sh
+ 1001  ./script.sh
+ 1002  ls
+ 1003  cd UnitedStats
+ 1004  cd UnitedStates
+ 1005  ls
+ 1006  cat Comedy.txt
+ 1007  cd ..
+ 1008  vim script.sh
+ 1009  rmdir -rf UnitedStates
+ 1010  rmdir UnitedStates
+ 1011  rmdir -f UnitedStates
+ 1012  rm -rf UnitedStates
+ 1013  ls
+ 1014  vim script.sh
+ 1015  ./script.sh
+ 1016  ls
+ 1017  cd UnitedStates
+ 1018  ls
+ 1019  cd ..
+ 1020* wc -l UnitedStates/Comedy.txt >> ws5.txt
+ 1021  vim script.sh
+ 1022  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "Comedy" | wc -l
+ 1023  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "Entertainment" | wc -l
+ 1024  wc -l UnitedStates/Entertainment.txt
+ 1025  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "Music" | wc -l
+ 1026  wc -l UnitedStates/Music.txt
+ 1027  wc -l UnitedStates/Gaming.txt
+ 1028  cut -d ',' -f 5,8 youtubeStats.csv | grep "United States" | grep "Gaming" | wc -l
+ 1029  wc -l UnitedStates/Music.txt >> ws5.txt
+ 1030  wc -l UnitedStates/Entertainment.txt >> ws5.txt
+ 1031  wc -l UnitedStates/Gaming.txt >> ws5.txt
+ 1032  wc -l UnitedStates/Comedy.txt >> ws5.txt
+ 1033  vim ws5.txt
+ 1034  history > cmds.log
